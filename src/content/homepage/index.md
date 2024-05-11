@@ -1,7 +1,7 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: Let us automate your Billing
+  content: We automate bills and billing code generations from doctors note.
   image: /images/banner-art.png
   button:
     label: "Contact Us"
@@ -10,26 +10,26 @@ banner:
 
 # feature
 feature: 
-  title: Something You Need To Know
+  title: Our solutions
   features:
-  - name: "Clean Code"
+  - name: "AI Technology"
     icon: "/images/code.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Object Oriented"
-    icon: "/images/oop.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "24h Service"
-    icon: "/images/user-clock.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Value for Money"
-    icon: "/images/love.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Faster Response"
+    content: "We use AI to automatically identify accurate medical coding"
+  - name: "Realtime"
     icon: "/images/speedometer.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Cloud Support"
+    content: "Medical bills are generate in realtime as doctors enter their note"
+  - name: "Complaint"
+    icon: "/images/oop.svg"
+    content: "We are compliant with the swiss law"
+  - name: "Customer Service"
+    icon: "/images/user-clock.svg"
+    content: "We are available 24*7"
+  - name: "Value for money"
+    icon: "/images/love.svg"
+    content: "We identify missed revenue opportunities to already pay for the services. Efficiency gain are additional"
+  - name: "Private cloud"
     icon: "/images/cloud.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "Privacy by design. We understand privacy."
 
 # services
 services:
