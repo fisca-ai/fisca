@@ -33,8 +33,8 @@ feature:
 
 # services
 services:
-  - title: "It is the most advanced digital marketing and it company."
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "It is the most advanced billing automation."
+    content: "The most advanced billing automation leverages cutting-edge technology for streamlined invoicing and payment processing, offering unparalleled efficiency and security. Its intuitive interface and customizable features empower organizations to optimize their financial operations and stay ahead in the competitive business landscape"
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
@@ -44,8 +44,8 @@ services:
       label: Check it out
       link: /contact
 
-  - title: "It is a privately owned Information and cyber security company"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Accurate medical coding"
+    content: "We use AI to automatically identify accurate medical coding. It is the most advanced billing automation leverages cutting-edge technology for streamlined invoicing and payment processing, offering unparalleled efficiency and security."
     images: 
       - "/images/service-slide-1.png"
     button:
@@ -53,8 +53,8 @@ services:
       label: Check it out
       link: /contact
   
-  - title: "It’s a team of experienced and skilled people with distributions"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Increase revenue and claim rate through automation"
+    content: "We identify the missed revenue opportunities and missing items in the bills. Making bills more accurate and compliant with the insurance."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
@@ -64,8 +64,8 @@ services:
       label: Check it out
       link: /contact
 
-  - title: "A company standing different from others"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "We are experienced team"
+    content: "We are experienced team. We understand privacy, compliance and customers’s needs. We are committed to providing the best possible service to our customers."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
@@ -77,14 +77,14 @@ services:
 
 # workflow
 workflow: 
-  title: "Experience the best workflow with us"
+  title: "Experience the best solution with us"
   image: "/images/banner.png"
   description: ""
 
 # call_to_action
 call_to_action:
   title: Ready to get started?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  content: Click below and contact us.
   image: '/images/cta.png'
   button:
     enable: true
