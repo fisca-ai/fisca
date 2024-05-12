@@ -2,7 +2,7 @@
 banner:
   title: Automate your Billing
   content: We automate bills and billing code generations from doctors note.
-  image: /images/banner-art.png
+  image: /images/main_img.webp
   button:
     label: "Contact Us"
     link: "/contact"
