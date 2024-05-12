@@ -15,39 +15,18 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-          <form class="contact-form" method="POST" action={contact_form_action}>
+          <form class="contact-form" method="POST" action={contact_form_action} data-netlify="true">
             <div class="mb-3">
-              <input
-                class="form-input w-full rounded"
-                name="name"
-                type="text"
-                placeholder="Name"
-                required
-              />
+              <input class="form-input w-full rounded" name="name" type="text" placeholder="Name" required />
             </div>
             <div class="mb-3">
-              <input
-                class="form-input w-full rounded"
-                name="email"
-                type="email"
-                placeholder="Your email"
-                required
-              />
+              <input class="form-input w-full rounded" name="email" type="email" placeholder="Your email" required />
             </div>
             <div class="mb-3">
-              <input
-                class="form-input w-full rounded"
-                name="subject"
-                type="text"
-                placeholder="Subject"
-                required
-              />
+              <input class="form-input w-full rounded" name="subject" type="text" placeholder="Subject" required />
             </div>
             <div class="mb-3">
-              <textarea
-                class="form-textarea w-full rounded-md"
-                rows="7"
-                placeholder="Your message"></textarea>
+              <textarea class="form-textarea w-full rounded-md" rows="7" placeholder="Your message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary"> Send Now</button>
           </form>
