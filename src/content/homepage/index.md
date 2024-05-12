@@ -1,6 +1,6 @@
 ---
 banner:
-  title: Let us automate your Billing
+  title: Automate your Billing
   content: We automate bills and billing code generations from doctors note.
   image: /images/banner-art.png
   button:
@@ -33,12 +33,10 @@ feature:
 
 # services
 services:
-  - title: "The most advanced billing automation."
+  - title: "The most advanced billing automation"
     content: "We offer the most advanced billing automation, leveraging cutting-edge technology for streamlined invoicing and payment processing, offering unparalleled efficiency and security. Intuitive interface and customizable features empower organizations to optimize their financial operations and stay ahead in the competitive business landscape with ease."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/img_9.webp"
     button:
       enable: true
       label: Check it out
@@ -47,7 +45,7 @@ services:
   - title: "Accurate medical coding"
     content: "We use AI to automatically identify accurate medical coding. Our cutting-edge technology optimizes billing by ensuring targeted accuracy."
     images: 
-      - "/images/service-slide-1.png"
+      - "/images/img_17.webp"
     button:
       enable: true
       label: Check it out
@@ -56,20 +54,17 @@ services:
   - title: "Increase revenue and claim rate through automation"
     content: "We identify the missed revenue opportunities and missing items in the bills. Making bills more accurate and compliant with the insurance."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/img_13.webp"
+      - "/images/img_4.webp"
     button:
       enable: true
       label: Check it out
       link: /contact
 
-  - title: "We are experienced team"
+  - title: "We are an experienced team"
     content: "We have decades of experience developing world-class systems. We understand privacy, compliance and customers’s needs. We are committed to providing the best possible service to our customers."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/img_12.webp"
     button:
       enable: true
       label: Check it out
@@ -77,7 +72,7 @@ services:
 
 # workflow
 workflow: 
-  title: "Experience solution to your needs with us."
+  title: "Find the solution to your needs with us."
   image: "/images/banner.png"
   description: ""
 
