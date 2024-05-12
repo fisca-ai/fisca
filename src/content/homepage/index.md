@@ -18,23 +18,23 @@ feature:
   - name: "Realtime"
     icon: "/images/speedometer.svg"
     content: "Medical bills are generate in realtime as doctors enter their note"
-  - name: "Complaint"
+  - name: "Compliant"
     icon: "/images/oop.svg"
-    content: "We are compliant with the swiss law"
+    content: "We are compliant with the Swiss law"
   - name: "Customer Service"
     icon: "/images/user-clock.svg"
     content: "We are available 24*7"
   - name: "Value for money"
     icon: "/images/love.svg"
-    content: "We identify missed revenue opportunities to already pay for the services. Efficiency gain are additional"
+    content: "We identify missed revenue opportunities to already paid-for the services."
   - name: "Private cloud"
     icon: "/images/cloud.svg"
     content: "Privacy by design. We understand privacy."
 
 # services
 services:
-  - title: "It is the most advanced billing automation."
-    content: "The most advanced billing automation leverages cutting-edge technology for streamlined invoicing and payment processing, offering unparalleled efficiency and security. Its intuitive interface and customizable features empower organizations to optimize their financial operations and stay ahead in the competitive business landscape"
+  - title: "The most advanced billing automation."
+    content: "We offer the most advanced billing automation, leveraging cutting-edge technology for streamlined invoicing and payment processing, offering unparalleled efficiency and security. Intuitive interface and customizable features empower organizations to optimize their financial operations and stay ahead in the competitive business landscape with ease."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
@@ -45,7 +45,7 @@ services:
       link: /contact
 
   - title: "Accurate medical coding"
-    content: "We use AI to automatically identify accurate medical coding. It is the most advanced billing automation leverages cutting-edge technology for streamlined invoicing and payment processing, offering unparalleled efficiency and security."
+    content: "We use AI to automatically identify accurate medical coding. Our cutting-edge technology optimizes billing by ensuring targeted accuracy."
     images: 
       - "/images/service-slide-1.png"
     button:
@@ -65,7 +65,7 @@ services:
       link: /contact
 
   - title: "We are experienced team"
-    content: "We are experienced team. We understand privacy, compliance and customers’s needs. We are committed to providing the best possible service to our customers."
+    content: "We have decades of experience developing world-class systems. We understand privacy, compliance and customers’s needs. We are committed to providing the best possible service to our customers."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
@@ -77,7 +77,7 @@ services:
 
 # workflow
 workflow: 
-  title: "Experience the best solution with us"
+  title: "Experience solution to your needs with us."
   image: "/images/banner.png"
   description: ""
 
