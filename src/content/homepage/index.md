@@ -73,7 +73,7 @@ services:
 # workflow
 workflow: 
   title: "Find the solution to your needs with us."
-  image: "/images/banner.png"
+  image: "/images/main_img.webp"
   description: ""
 
 # call_to_action
