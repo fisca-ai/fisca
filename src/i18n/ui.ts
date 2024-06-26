@@ -31,6 +31,8 @@ export const ui: Ui = {
     Subject: "Betreff",
     "Your message": "Ihre Nachricht",
     "Send Now": "Jetzt senden",
+    "Menu Open": "Menu öffnen",
+    "Menu Close": "Menu schließen",
   },
   en: {
     Home: "Home",
@@ -50,6 +52,8 @@ export const ui: Ui = {
     Subject: "Subject",
     "Your message": "Your message",
     "Send Now": "Send Now",
+    "Menu Open": "Menu Open",
+    "Menu Close": "Menu Close",
   },
   fr: {
     Home: "Accueil",
@@ -69,6 +73,8 @@ export const ui: Ui = {
     Subject: "Sujet",
     "Your message": "Votre message",
     "Send Now": "Envoyer maintenant",
+    "Menu Open": "Menu ouvert",
+    "Menu Close": "Menu ferme",
   },
   it: {
     Home: "Home",
@@ -88,6 +94,8 @@ export const ui: Ui = {
     Subject: "Oggetto",
     "Your message": "Il tuo messaggio",
     "Send Now": "Invia ora",
+    "Menu Open": "Menu aperto",
+    "Menu Close": "Menu chiuso",
   },
 } as const;
 
