@@ -5,7 +5,7 @@
       "url": "/"
     },
     {
-      "name": "About Us",
+      "name": "About",
       "url": "/about"
     },
     {
@@ -23,7 +23,7 @@
         },
         {
           "text": "Quick Start",
-          "url": "#"
+          "url": "/"
         }
       ]
     },
@@ -32,7 +32,11 @@
       "menu": [
         {
           "text": "AI Billing",
-          "url": "#"
+          "url": "/"
+        },
+        {
+          "text": "Pricing",
+          "url": "/pricing"
         }
       ]
     },
@@ -45,11 +49,11 @@
         },
         {
           "text": "Privacy Policy",
-          "url": "/privacy-policy"
+          "url": "/[lang]/privacy-policy"
         },
         {
           "text": "Terms & Conditions",
-          "url": "/terms-conditions"
+          "url": "/[lang]/terms-conditions"
         }
       ]
     }

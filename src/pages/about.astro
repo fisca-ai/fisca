@@ -1,0 +1,6 @@
+---
+import BaseAbout from "@/layouts/pages/About.astro";
+const lang = Astro.cookies.get("lang")?.value || "en";
+---
+
+<BaseAbout lang={lang} />

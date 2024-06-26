@@ -3,23 +3,29 @@ import Base from "@/layouts/Base.astro";
 import Default from "@/layouts/Default.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   const pages = await getSinglePage("pages");
 
   const paths = pages.map((page) => ({
     params: {
-      regular: page.slug,
+      lang: page.slug.split("/")[0],
+      regular: page.slug.split("/")[1],
     },
     props: { page },
   }));
   return paths;
 }
 
+const { lang, regular } = Astro.params;
 const { page } = Astro.props;
 const { title, meta_title, description, image } = page.data;
+
 ---
 
 <Base
+  lang={lang}
   title={title}
   meta_title={meta_title}
   description={description}

@@ -21,6 +21,7 @@ if (theme.fonts.font_family.primary) {
 
 // types for frontmatters
 export interface Props {
+  lang?: string;
   title?: string;
   meta_title?: string;
   description?: string;
@@ -30,12 +31,12 @@ export interface Props {
 }
 
 // distructure frontmatters
-const { title, meta_title, description, image, noindex, canonical } =
+const { lang, title, meta_title, description, image, noindex, canonical } =
   Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <!-- favicon -->
     <link rel="shortcut icon" href={config.site.favicon} />
@@ -91,7 +92,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       name="description"
       content={plainify(
-        description ? description : config.metadata.meta_description,
+        description ? description : config.metadata.meta_description
       )}
     />
 
@@ -104,7 +105,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       property="og:title"
       content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title,
+        meta_title ? meta_title : title ? title : config.site.title
       )}
     />
 
@@ -112,7 +113,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       property="og:description"
       content={plainify(
-        description ? description : config.metadata.meta_description,
+        description ? description : config.metadata.meta_description
       )}
     />
     <meta property="og:type" content="website" />
@@ -125,7 +126,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       name="twitter:title"
       content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title,
+        meta_title ? meta_title : title ? title : config.site.title
       )}
     />
 
@@ -133,7 +134,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta
       name="twitter:description"
       content={plainify(
-        description ? description : config.metadata.meta_description,
+        description ? description : config.metadata.meta_description
       )}
     />
 
@@ -156,10 +157,10 @@ const { title, meta_title, description, image, noindex, canonical } =
   </head>
   <body>
     <TwSizeIndicator />
-    <Header />
+    <Header lang={lang} />
     <main id="main-content">
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 </html>

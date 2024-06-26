@@ -10,6 +10,8 @@
     "format": "prettier -w ."
   },
   "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/db": "^0.11.7",
     "@astrojs/mdx": "^2.3.1",
     "@astrojs/react": "^3.3.2",
     "@astrojs/rss": "^4.0.5",
@@ -29,11 +31,12 @@
     "remark-collapse": "^0.1.2",
     "remark-toc": "^9.0.0",
     "sharp": "0.33.1",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "typescript": "^5.5.2"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.13",
     "@types/marked": "^5.0.2",
     "@types/react": "^18.2.52",
     "postcss": "^8.4.33",

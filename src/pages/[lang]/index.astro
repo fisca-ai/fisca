@@ -1,0 +1,17 @@
+---
+import BaseIndex from "@/layouts/pages/Index.astro";
+import { languages } from "@/i18n/ui";
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  return Object.entries(languages).map((l) => ({
+    params: { lang: l[0] },
+  }));
+}
+
+const { lang } = Astro.params;
+Astro.cookies.set("lang", lang);
+---
+
+<BaseIndex lang={lang} />
