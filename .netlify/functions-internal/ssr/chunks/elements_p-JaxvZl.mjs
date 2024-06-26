@@ -2,7 +2,7 @@ import { _ as __astro_tag_component__, F as Fragment, c as createVNode } from '.
 import '@astrojs/internal-helpers/path';
 import './astro/assets-service_ftBY4dGz.mjs';
 import { $ as $$Image } from './_astro_assets_DmzkBWpW.mjs';
-import { B as Button, N as Notice, T as Tabs, a as Tab, A as Accordion, Y as Youtube, V as Video } from './Tab_BxwUHXVl.mjs';
+import { B as Button, N as Notice, T as Tabs, a as Tab, A as Accordion, Y as Youtube, V as Video } from './Tab_yFfBWnOG.mjs';
 import 'clsx';
 
 const frontmatter = {

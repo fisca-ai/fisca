@@ -1,6 +1,6 @@
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { useState, useRef, useEffect } from 'react';
-import { h as humanize } from './_astro_content_DXTAWoIx.mjs';
+import { h as humanize } from './_astro_content_NMXE1VyB.mjs';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 /* empty css                                    */
 import { marked } from 'marked';

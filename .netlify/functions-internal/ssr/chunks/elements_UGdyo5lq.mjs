@@ -2,7 +2,7 @@ import { _ as __astro_tag_component__, F as Fragment, c as createVNode } from '.
 import '@astrojs/internal-helpers/path';
 import './astro/assets-service_ftBY4dGz.mjs';
 import { $ as $$Image } from './_astro_assets_DmzkBWpW.mjs';
-import { B as Button, N as Notice, T as Tabs, a as Tab, A as Accordion, Y as Youtube, V as Video } from './Tab_BxwUHXVl.mjs';
+import { B as Button, N as Notice, T as Tabs, a as Tab, A as Accordion, Y as Youtube, V as Video } from './Tab_yFfBWnOG.mjs';
 import 'clsx';
 
 const frontmatter = {
@@ -1097,14 +1097,14 @@ function MDXContent(props = {}) {
 }
 __astro_tag_component__(getHeadings, "astro:jsx");
 __astro_tag_component__(MDXContent, "astro:jsx");
-const url = "/de/elements";
-const file = "/home/pankaj/Projects/fisca/landing/website/src/content/pages/de/elements.mdx";
+const url = "/it/elements";
+const file = "/home/pankaj/Projects/fisca/landing/website/src/content/pages/it/elements.mdx";
 const Content = (props = {}) => MDXContent({
 											...props,
 											components: { Fragment, ...props.components, "astro-image":  props.components?.img ?? $$Image },
 										});
 Content[Symbol.for('mdx-component')] = true;
 Content[Symbol.for('astro.needsHeadRendering')] = !Boolean(frontmatter.layout);
-Content.moduleId = "/home/pankaj/Projects/fisca/landing/website/src/content/pages/de/elements.mdx";
+Content.moduleId = "/home/pankaj/Projects/fisca/landing/website/src/content/pages/it/elements.mdx";
 
 export { Content, __usesAstroImage, Content as default, file, frontmatter, getHeadings, url };

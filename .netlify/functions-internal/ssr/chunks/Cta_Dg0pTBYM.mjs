@@ -3,7 +3,7 @@ import 'kleur/colors';
 import '@astrojs/internal-helpers/path';
 import './astro/assets-service_ftBY4dGz.mjs';
 import { $ as $$Image } from './_astro_assets_DmzkBWpW.mjs';
-import { m as markdownify, a as useTranslatedPath } from './_astro_content_DXTAWoIx.mjs';
+import { m as markdownify, a as useTranslatedPath } from './_astro_content_NMXE1VyB.mjs';
 
 const $$Astro = createAstro("https://fisca.ai/");
 const $$Cta = createComponent(($$result, $$props, $$slots) => {

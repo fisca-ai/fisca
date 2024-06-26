@@ -4,7 +4,7 @@ import 'clsx';
 import '@astrojs/internal-helpers/path';
 import './astro/assets-service_ftBY4dGz.mjs';
 import { $ as $$Image } from './_astro_assets_DmzkBWpW.mjs';
-import { p as plainify, c as config } from './_astro_content_DXTAWoIx.mjs';
+import { p as plainify, c as config } from './_astro_content_NMXE1VyB.mjs';
 
 const $$Astro$1 = createAstro("https://fisca.ai/");
 const $$Pagination = createComponent(($$result, $$props, $$slots) => {

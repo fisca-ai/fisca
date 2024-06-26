@@ -1,7 +1,7 @@
 /* empty css                             */
 import { a as createAstro, b as createComponent, d as renderTemplate, e as renderComponent, m as maybeRenderHead, u as unescapeHTML } from './astro/server_MWqX10iY.mjs';
 import 'kleur/colors';
-import { g as getEntryBySlug, $ as $$Base, m as markdownify, l as languages } from './_astro_content_DXTAWoIx.mjs';
+import { g as getEntryBySlug, $ as $$Base, m as markdownify, l as languages } from './_astro_content_NMXE1VyB.mjs';
 
 const $$Astro$1 = createAstro("https://fisca.ai/");
 const $$About$1 = createComponent(async ($$result, $$props, $$slots) => {

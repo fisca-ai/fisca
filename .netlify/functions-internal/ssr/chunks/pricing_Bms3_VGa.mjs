@@ -1,8 +1,8 @@
 /* empty css                             */
 import { a as createAstro, b as createComponent, d as renderTemplate, e as renderComponent, m as maybeRenderHead, f as addAttribute } from './astro/server_MWqX10iY.mjs';
 import 'kleur/colors';
-import { g as getEntryBySlug, $ as $$Base, a as useTranslatedPath, l as languages } from './_astro_content_DXTAWoIx.mjs';
-import { $ as $$Cta } from './Cta_DCQcpwXm.mjs';
+import { g as getEntryBySlug, $ as $$Base, a as useTranslatedPath, l as languages } from './_astro_content_NMXE1VyB.mjs';
+import { $ as $$Cta } from './Cta_Dg0pTBYM.mjs';
 
 const $$Astro$1 = createAstro("https://fisca.ai/");
 const $$Pricing$1 = createComponent(async ($$result, $$props, $$slots) => {

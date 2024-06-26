@@ -3,8 +3,8 @@ import 'kleur/colors';
 import '@astrojs/internal-helpers/path';
 import './astro/assets-service_ftBY4dGz.mjs';
 import { $ as $$Image } from './_astro_assets_DmzkBWpW.mjs';
-import { d as getEntry, m as markdownify, $ as $$Base, a as useTranslatedPath } from './_astro_content_DXTAWoIx.mjs';
-import { $ as $$Cta } from './Cta_DCQcpwXm.mjs';
+import { d as getEntry, m as markdownify, $ as $$Base, a as useTranslatedPath } from './_astro_content_NMXE1VyB.mjs';
+import { $ as $$Cta } from './Cta_Dg0pTBYM.mjs';
 
 const $$Astro = createAstro("https://fisca.ai/");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {

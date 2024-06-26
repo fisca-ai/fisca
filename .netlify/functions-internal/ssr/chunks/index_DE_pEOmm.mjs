@@ -1,8 +1,8 @@
 /* empty css                             */
 import { a as createAstro, b as createComponent, d as renderTemplate, e as renderComponent } from './astro/server_MWqX10iY.mjs';
 import 'kleur/colors';
-import { $ as $$Index$1 } from './Index_D1j6Ts38.mjs';
-import { l as languages } from './_astro_content_DXTAWoIx.mjs';
+import { $ as $$Index$1 } from './Index_BQVDL7SK.mjs';
+import { l as languages } from './_astro_content_NMXE1VyB.mjs';
 
 const $$Astro = createAstro("https://fisca.ai/");
 const prerender = true;
