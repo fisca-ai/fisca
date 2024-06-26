@@ -4,6 +4,7 @@ import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/components/Cta.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
+import { useTranslatedPath } from "@/i18n/utils";
 
 // types for frontmatters
 export interface Props {
@@ -17,6 +18,8 @@ const homepage = await getEntry("homepage", lang!);
 
 const { banner, feature, app, services, workflow, call_to_action } =
   homepage!.data;
+
+const tp = useTranslatedPath(lang!);
 ---
 
 <Base lang={lang}>
@@ -34,7 +37,7 @@ const { banner, feature, app, services, workflow, call_to_action } =
 
           {
             banner?.button?.enable && (
-              <a class="btn btn-primary mt-4" href={banner.button.link}>
+              <a class="btn btn-primary mt-4" href={tp(banner.button.link)}>
                 {banner.button.label}
               </a>
             )
@@ -166,7 +169,7 @@ const { banner, feature, app, services, workflow, call_to_action } =
                 <p class="mt-4 mb-2">{service?.content}</p>
                 {service?.button?.enable && (
                   <a
-                    href={service?.button.link}
+                    href={tp(service?.button.link)}
                     class="cta-link inline-flex items-center text-primary"
                   >
                     {service?.button.label}
@@ -228,5 +231,5 @@ const { banner, feature, app, services, workflow, call_to_action } =
   </section>
 
   <!-- Call to Action -->
-  <Cta cta={call_to_action} />
+  <Cta lang={lang} cta={call_to_action} />
 </Base>

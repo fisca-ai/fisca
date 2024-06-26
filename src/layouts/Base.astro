@@ -8,6 +8,7 @@ import Header from "@/partials/Header.astro";
 import "@/styles/main.scss";
 import { AstroFont } from "astro-font";
 import { ViewTransitions } from "astro:transitions";
+import { useTranslatedPath } from "@/i18n/utils";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -33,6 +34,8 @@ export interface Props {
 // distructure frontmatters
 const { lang, title, meta_title, description, image, noindex, canonical } =
   Astro.props;
+
+const tp = useTranslatedPath(lang!);
 ---
 
 <!doctype html>
@@ -83,7 +86,7 @@ const { lang, title, meta_title, description, image, noindex, canonical } =
     </title>
 
     <!-- canonical url -->
-    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
+    {canonical && <link rel="canonical" href={tp(canonical)} item-prop="url" />}
 
     <!-- noindex robots -->
     {noindex && <meta name="robots" content="noindex,nofollow" />}

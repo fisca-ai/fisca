@@ -30,6 +30,7 @@ export const ui: Ui = {
     "Your email": "Ihre Email",
     Subject: "Betreff",
     "Your message": "Ihre Nachricht",
+    "Send Now": "Jetzt senden",
   },
   en: {
     Home: "Home",
@@ -48,6 +49,7 @@ export const ui: Ui = {
     "Your email": "Your Email",
     Subject: "Subject",
     "Your message": "Your message",
+    "Send Now": "Send Now",
   },
   fr: {
     Home: "Accueil",
@@ -66,6 +68,7 @@ export const ui: Ui = {
     "Your email": "Votre email",
     Subject: "Sujet",
     "Your message": "Votre message",
+    "Send Now": "Envoyer maintenant",
   },
   it: {
     Home: "Home",
@@ -84,6 +87,7 @@ export const ui: Ui = {
     "Your email": "La tua email",
     Subject: "Oggetto",
     "Your message": "Il tuo messaggio",
+    "Send Now": "Invia ora",
   },
 } as const;
 

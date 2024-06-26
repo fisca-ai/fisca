@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
 import config from "@/config/config.json";
-const { src } = Astro.props;
+import { useTranslatedPath } from "@/i18n/utils";
+
+const { lang, src } = Astro.props;
 const {
   logo,
   logo_width,
@@ -15,9 +17,11 @@ const {
   logo_text: string;
   title: string;
 } = config.site;
+
+const tp = useTranslatedPath(lang);
 ---
 
-<a href="/" class="navbar-brand block md:w-[150px] lg:w-auto">
+<a href={tp("/")} class="navbar-brand block md:w-[150px] lg:w-auto">
   {
     src || logo ? (
       <Image

@@ -3,12 +3,15 @@ import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/components/Cta.astro";
 import type { TPostType, TPlan } from "@/types";
 import { getEntryBySlug } from "astro:content";
+import { useTranslatedPath } from "@/i18n/utils";
 
 // distructure frontmatters
 const { lang } = Astro.props;
 
 const entry = (await getEntryBySlug("pricing", lang!)) as TPostType;
 const { title, description, plans, call_to_action } = entry!.data;
+
+const tp = useTranslatedPath(lang!);
 ---
 
 <Base lang={lang} title={title} description={description}>
@@ -39,7 +42,7 @@ const { title, description, plans, call_to_action } = entry!.data;
                   class={`btn mt-5 ${
                     plan.recommended ? "btn-primary" : "btn-outline-primary"
                   }`}
-                  href={plan.button.link}
+                  href={tp(plan.button.link)}
                 >
                   {plan.button.label}
                 </a>
@@ -50,5 +53,5 @@ const { title, description, plans, call_to_action } = entry!.data;
       </div>
     </div>
   </section>
-  <Cta cta={call_to_action} />
+  <Cta lang={lang} cta={call_to_action} />
 </Base>

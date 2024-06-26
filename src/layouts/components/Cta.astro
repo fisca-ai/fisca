@@ -1,8 +1,11 @@
 ---
 import { Image } from "astro:assets";
 import { markdownify } from "@/lib/utils/textConverter";
+import { useTranslatedPath } from "@/i18n/utils";
 
-const { cta } = Astro.props;
+const { lang, cta } = Astro.props;
+
+const tp = useTranslatedPath(lang);
 ---
 
 <section class="section px-4">
@@ -24,7 +27,7 @@ const { cta } = Astro.props;
           cta.button.enable && (
             <a
               class="btn btn-primary mt-4"
-              href={cta.button.link}
+              href={tp(cta.button.link)}
               rel={cta.button.rel}
             >
               {cta.button.label}

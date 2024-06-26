@@ -1,9 +1,3 @@
 ---
-import BaseIndex from "@/layouts/pages/Index.astro";
-
-const lang = Astro.cookies.get("lang")?.value || "en";
-
-Astro.cookies.set("lang", lang);
+// Required index.astro
 ---
-
-<BaseIndex lang={lang} />
