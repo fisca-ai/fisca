@@ -10,6 +10,7 @@ import type { TIndexData } from "@/types";
 import { getEntryBySlug } from "astro:content";
 const { blog_folder } = config.settings;
 
+export const prerender = true;
 export async function getStaticPaths() {
   const posts = await getSinglePage(config.settings.blog_folder as any);
   const totalPages = Math.ceil(posts.length / config.settings.pagination);

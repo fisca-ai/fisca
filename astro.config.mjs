@@ -8,8 +8,11 @@ import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 
+import netlify from "@astrojs/netlify";
+
 // https://astro.build/config
 export default defineConfig({
+  output: "hybrid",
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
@@ -35,9 +38,24 @@ export default defineConfig({
   },
   i18n: {
     defaultLocale: "en",
-    locales: ["de", "en", "fr", "it"],
+    locales: [{
+      path: "de",
+      codes: ["de", "de-CH", "de-DE"]
+    }, {
+      path: "en",
+      codes: ["en", "en-GB", "en-US"]
+    }, {
+      path: "fr",
+      codes: ["fr", "fr-CH"]
+    }, {
+      path: "it",
+      codes: ["fr", "it-CH"]
+    }],
     routing: {
-      prefixDefaultLocale: true
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: false,
+      strategy: "pathname",
     }
   },
+  adapter: netlify({ edgeMiddleware: true }),
 });

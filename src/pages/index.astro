@@ -1,3 +1,16 @@
 ---
-// Required index.astro
+import BaseIndex from "@/layouts/pages/Index.astro";
+
+export const prerender = false;
+
+const lang = Astro.preferredLocale ?? "en";
+
+console.log("Preferred locale:", Astro.preferredLocale);
+console.log("Preferred locale list:", Astro.preferredLocaleList);
+console.log(
+  "Accept-Language header:",
+  Astro.request.headers.get("Accept-Language")
+);
 ---
+
+<BaseIndex lang={lang} />
