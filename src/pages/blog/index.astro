@@ -14,7 +14,7 @@ const { blog_folder, summary_length } = config.settings;
 
 const postIndex = (await getEntryBySlug<any, string>(
   blog_folder,
-  "index",
+  "index"
 )) as TIndexData;
 const posts = await getSinglePage(blog_folder as any);
 const sortedPosts = sortByDate(posts);
@@ -22,7 +22,7 @@ const totalPages = Math.ceil(posts.length / config.settings.pagination);
 const currentPosts = sortedPosts.slice(0, config.settings.pagination);
 ---
 
-<Base title={postIndex?.data.title}>
+<Base lang="en" title={postIndex?.data.title}>
   <section class="section">
     <div class="container">
       <h1
