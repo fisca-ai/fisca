@@ -21,6 +21,7 @@
     "astro": "^4.7.1",
     "astro-auto-import": "^0.4.2",
     "astro-font": "^0.0.77",
+    "canvas-confetti": "^1.9.3",
     "fuse.js": "^7.0.0",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",

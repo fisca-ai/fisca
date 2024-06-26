@@ -6,7 +6,7 @@ const { lang } = Astro.props;
 const suffix = Astro.url.pathname.replace(`/${lang}`, "");
 ---
 
-<div class="nav-item nav-dropdown group relative order-1">
+<div id="language-picker" class="nav-item nav-dropdown group relative order-1">
   <button
     class="nav-dropdown-toggle inline-flex items-center justify-center w-full h-10 px-4 text-sm font-semibold tracking-wide uppercase text-gray-700 transition-colors duration-150 ease-in-out focus:outline-none hover:bg-gray-100 focus:bg-gray-100"
   >
@@ -25,6 +25,7 @@ const suffix = Astro.url.pathname.replace(`/${lang}`, "");
               class={`nav-dropdown-link block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 ${
                 key === lang ? "font-bold" : ""
               }`}
+              data-lang={key}
             >
               {key.toUpperCase()}
             </a>
@@ -33,3 +34,45 @@ const suffix = Astro.url.pathname.replace(`/${lang}`, "");
     }
   </ul>
 </div>
+
+<!-- <script>
+  import { setCookie } from "@/lib/utils/cookies";
+
+  console.log("DOM fully loaded and parsed");
+  const languagePicker = document.getElementById("language-picker");
+
+  console.log("language-picker element found");
+
+  const links = languagePicker?.querySelectorAll(".nav-dropdown-link");
+
+  console.log("Found links in language-picker:", links);
+
+  links?.forEach((link) => {
+    console.log("Attaching event listener to link:", link);
+    link.addEventListener("click", (event) => {
+      alert("Clicked:" + link);
+      event.preventDefault(); // Prevent default navigation
+      const target = event.target as HTMLAnchorElement;
+      const lang = target?.getAttribute("data-lang");
+      console.log("setCookie", document.cookie);
+      setCookie("lang", lang!, 360);
+      // window.location.href = target.href;
+    });
+  });
+</script> -->
+
+<script is:inline>
+  // Add event listeners to fire confetti when a button is clicked.
+  document.querySelectorAll(".nav-dropdown-link").forEach((link) => {
+    if (!link.hasAttribute("data-click-listener")) {
+      link.addEventListener("click", (event) => {
+        const data_lang = event.target.getAttribute("data-lang");
+        const expires = new Date(Date.now() + 360 * 86400000).toUTCString();
+        document.cookie = `lang=${data_lang}; expires=${expires}; path=/`;
+        console.log("setCookie", document.cookie);
+      });
+    }
+
+    link.setAttribute("data-click-listener", "true");
+  });
+</script>

@@ -35,8 +35,6 @@ export interface Props {
 const { lang, title, meta_title, description, image, noindex, canonical } =
   Astro.props;
 
-Astro.cookies.set("lang", lang!);
-
 const tp = useTranslatedPath(lang!);
 ---
 

@@ -1,11 +1,12 @@
 ---
 import BaseIndex from "@/layouts/pages/Index.astro";
+import { languages } from "@/i18n/ui";
 
 export const prerender = false;
 
 const lang = Astro.cookies.get("lang")?.value ?? Astro.preferredLocale ?? "en";
 
-Astro.cookies.set("lang", lang);
+// Astro.cookies.set("lang", lang);
 ---
 
-<BaseIndex lang={lang} />
+<BaseIndex lang={Object.keys(languages).includes(lang) ? lang : "en"} />

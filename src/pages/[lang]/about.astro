@@ -5,8 +5,8 @@ import { languages } from "@/i18n/ui";
 export const prerender = true;
 
 export async function getStaticPaths() {
-  return Object.entries(languages).map((l) => ({
-    params: { lang: l[0] },
+  return Object.keys(languages).map((l) => ({
+    params: { lang: l },
   }));
 }
 
