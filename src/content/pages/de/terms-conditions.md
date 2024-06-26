@@ -1,5 +1,5 @@
 ---
-title: "Terms and Conditions"
+title: "Bedingungen und Konditionen"
 description: "this is meta description"
 draft: false
 ---
