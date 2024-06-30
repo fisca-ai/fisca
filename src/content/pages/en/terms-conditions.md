@@ -1,29 +1,52 @@
 ---
 title: "Terms and Conditions"
-description: "this is meta description"
+description: "Read the terms and conditions for using the Fisca.ai website."
 draft: false
 ---
 
-#### Responsibility of Contributors
+#### 1. Introduction
+These Terms and Conditions ("Terms") govern your use of our website, fisca.ai ("Website"), which is managed by Fisca.ai, hereinafter referred to as "we", "us", or "our". By accessing our Website, you agree to be bound by these Terms and any applicable laws and regulations.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+#### 2. Purpose
+Our Website provides information about Easybill and other services, facilitating access to our mobile application ("App"). The App scans bills and provides explanations using server calls, as described in the App's Terms of Service.
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+#### 3. License
+3.1 You are granted a limited, non-exclusive license to use our Website for personal or commercial purposes.
+3.2 This license is revocable at any time without notice.
+3.3 You may not reproduce, modify, adapt, translate, or create derivative works of the Website without our prior written consent.
 
-#### Gathering of Personal Information
+#### 4. Content and Services
+4.1 The content and services provided on our Website are for informational purposes only.
+4.2 We may make changes to the materials and services at our Website at any time without notice.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+#### 5. Data Protection
+5.1 We respect your privacy and are committed to protecting personal information you may provide us through the Website.
+5.2 Our Privacy Policy governs the collection, use, and storage of personal data.
 
-#### Protection of Personal- Information
+#### 6. Security
+6.1 We strive to keep the Website secure but acknowledge that no electronic transmission over the internet can be guaranteed to be 100% secure.
+6.2 We cannot ensure or warrant the security of any information you transmit to us.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+#### 7. Warranty Disclaimer
+7.1 Our Website is provided "as is," without warranty of any kind, express or implied.
+7.2 We disclaim all warranties, including but not limited to any implied warranties of merchantability, fitness for a particular purpose, title, or non-infringement.
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+#### 8. Limitation of Liability
+8.1 In no event will we be liable for any damages, including but not limited to direct, indirect, consequential, special, punitive, or incidental damages.
 
-#### Privacy Policy Changes
+#### 9. Governing Law
+9.1 These Terms are governed by and construed in accordance with the laws of Zurich, Switzerland.
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+#### 10. Indemnification
+10.1 You agree to indemnify and hold us harmless against any claims, damages, or expenses arising from your use of our Website.
+
+#### 11. Changes to Terms
+11.1 We reserve the right to modify these Terms at any time without notice.
+11.2 Your continued use of the Website after changes are made will constitute acceptance of the revised Terms.
+
+#### 12. Dispute Resolution
+12.1 Any disputes arising from your use of our Website or these Terms shall be resolved through arbitration.
+
+By using our Website, you acknowledge that you have read, understood, and agreed to these Terms of Service.
+
+Please note that this is a sample template, and you should consult with legal counsel to ensure that your Terms comply with applicable laws and regulations in your jurisdiction.
