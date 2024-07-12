@@ -6,7 +6,7 @@ import { getEntryBySlug } from "astro:content";
 // distructure frontmatters
 const { lang } = Astro.props;
 
-const entry = await getEntryBySlug("about", lang!);
+const entry = await getEntryBySlug("team", lang!);
 const { Content } = await entry!.render();
 ---
 

@@ -1,7 +1,7 @@
 ---
 banner:
-  title: Focus on Patient Care, Not Paperwork
-  content: Automate your billing process with our billing co-pilot.
+  title: Code Smart, Enhance Care
+  content: AI powered autonomous coding and billing solutions
   image: /images/main_img.webp
   button:
     label: "Contact Us"
@@ -17,7 +17,7 @@ feature:
       content: "We use AI to automatically identify accurate medical coding from doctors note"
     - name: "Compliant"
       icon: "/images/oop.svg"
-      content: "We are compliant with the Swiss medical coding and insurance, less time to worry about insurance claims"
+      content: "We are compliant with the Swiss medical coding and insurance, less time to worry team insurance claims"
     - name: "Customer Service"
       icon: "/images/user-clock.svg"
       content: "We are available 24*7"
@@ -29,7 +29,7 @@ feature:
       content: "Privacy by design. We understand privacy. Your data never leaves Switzerland"
     - name: "Bill understanding"
       icon: "/images/phone.svg"
-      content: "Scan or upload your bill to understand what each item is about."
+      content: "Scan or upload your bill to understand what each item is team."
 
 # app
 app:
