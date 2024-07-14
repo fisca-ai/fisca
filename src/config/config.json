@@ -6,8 +6,9 @@
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
-    "logo_width": "300",
-    "logo_height": "80",
+    "logo_green": "/images/logo_green.png",
+    "logo_width": "180",
+    "logo_height": "50",
     "logo_text": "Astroplate"
   },
 
@@ -32,7 +33,7 @@
 
   "metadata": {
     "meta_author": "Fisca",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "/images/logo.png",
     "meta_description": "Fisca website"
   }
 }

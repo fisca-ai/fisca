@@ -1,10 +1,17 @@
 ---
 banner:
-  title: Code Smart, Enhance Care
-  content: AI powered autonomous coding and billing solutions
-  image: /images/main_img.webp
+  title_text00: Code
+  title_text01: Smart
+  title_text10: Enhance
+  title_text11: Care
+  content: Future of revenue and claims management with AI-powered coding and billing copilot so that you more time for patient care.
+  svg_text0: Medical Coding
+  svg_text1: Billing
+  svg_text2: Claims
+  svg_text3: Analytics &
+  svg_text4: Insights
   button:
-    label: "Contact Us"
+    label: "Learn more about our solutions"
     link: "/contact"
     enable: true
 

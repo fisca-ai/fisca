@@ -34,6 +34,7 @@
     "remark-toc": "^9.0.0",
     "sharp": "0.33.1",
     "swiper": "^11.0.5",
+    "text-to-svg": "^3.1.5",
     "typescript": "^5.5.2"
   },
   "devDependencies": {

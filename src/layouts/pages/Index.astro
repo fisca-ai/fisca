@@ -24,105 +24,175 @@ const tp = useTranslatedPath(lang!);
 
 <Base lang={lang}>
   <!-- banner -->
-  <section class="section pb-[50px]">
+  <div class="section pb-[50px] bg-banner">
     <div class="container">
-      <div class="row text-center">
-        <div class="mx-auto lg:col-10">
-          <h1 class="font-primary font-bold">{banner?.title}</h1>
-          {
-            banner?.content && (
-              <p class="mt-4" set:html={markdownify(banner.content)} />
-            )
-          }
+      <div class="row flex flex-wrap lg:flex-nowrap items-center">
+        <div class="lg:w-1/2 pr-4 lg:order-1">
+          <div class="text-center lg:text-left">
+            <h1 class="font-primary font-bold">
+              <span class="text-black">{banner?.title_text00}</span>
+              <span class="text-primary"
+                >{banner?.title_text01}<span class="text-black">.</span></span
+              >
+            </h1>
+            <h1 class="font-primary font-bold">
+              <span class="text-primary">{banner?.title_text10}</span>
+              <span class="text-black"
+                >{banner?.title_text11}<span class="text-black">.</span></span
+              >
+            </h1>
+            {
+              banner?.content && (
+                <p class="mt-4" set:html={markdownify(banner.content)} />
+              )
+            }
 
-          {
-            banner?.button?.enable && (
-              <a class="btn btn-primary mt-4" href={tp(banner.button.link)}>
-                {banner.button.label}
-              </a>
-            )
-          }
-
-          {
-            banner?.image && (
-              <Image
-                class="mx-auto mt-12"
-                src={banner?.image}
-                width={750}
-                height={390}
-                alt="banner image"
-              />
-            )
-          }
+            {
+              banner?.button?.enable && (
+                <a class="btn btn-black mt-4" href={tp(banner.button.link)}>
+                  {banner.button.label}
+                </a>
+              )
+            }
+          </div>
+        </div>
+        <!-- <div class="lg:w-1/2 pl-4 mt-12 lg:mt-0"> -->
+        <div class="lg:w-1/2 pl-4 mt-12 lg:mt-0 lg:order-2">
+          <!--?xml version="1.0"?-->
+          <svg
+            class="mx-auto max-w-full lg:max-w-none"
+            width="100%"
+            height="auto"
+            viewBox="0 0 400 400"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g class="layer" transform="scale(2)">
+              <title>Layer 1</title>
+              <path
+                d="m66.52,36.65a70,70 0 0 0 -29.86,29.85l0.53,0.27a69.4,69.4 0 0 1 29.61,-29.59l-0.28,-0.53z"
+                fill="#109A97"
+                id="svg_1"
+                stroke="#109A97"
+                stroke-width="0"></path>
+              <path
+                d="m37.16,130.71l-0.53,0.28a70,70 0 0 0 29.62,29.77l0.28,-0.53a69.4,69.4 0 0 1 -29.37,-29.52z"
+                fill="#109A97"
+                id="svg_2"
+                stroke="#109A97"
+                stroke-width="0"></path>
+              <path
+                d="m160.39,130.71a69.4,69.4 0 0 1 -29.85,29.77l0.28,0.53a70,70 0 0 0 30.1,-30.02l-0.53,-0.28z"
+                fill="#109A97"
+                id="svg_3"
+                stroke="#109A97"
+                stroke-width="0"></path>
+              <path
+                d="m130.99,36.63l-0.28,0.53a69.4,69.4 0 0 1 29.66,29.64l0.53,-0.28a70,70 0 0 0 -29.91,-29.89z"
+                fill="#109A97"
+                id="svg_4"
+                stroke="#109A97"
+                stroke-width="0"></path>
+              <path
+                d="m98.47,0c-16.05,0 -29.07,13.02 -29.07,29.07c0,16.06 13.02,29.08 29.08,29.08c16.05,0 29.07,-13.02 29.07,-29.08c0,-16.05 -13.02,-29.07 -29.08,-29.07zm0,0.6c15.73,0 28.48,12.74 28.48,28.47s-12.75,28.48 -28.48,28.48c-15.72,0 -28.47,-12.75 -28.47,-28.48c0,-15.73 12.75,-28.47 28.47,-28.47z"
+                fill="#109A97"
+                id="svg_5"
+                stroke="#109A97"
+                stroke-width="0"></path>
+              <path
+                d="m168.47,69.7c-16.05,0 -29.07,13.02 -29.07,29.07c0,16.06 13.02,29.08 29.07,29.08c16.06,0 29.08,-13.02 29.08,-29.08c0,-16.05 -13.02,-29.07 -29.08,-29.07zm0,0.6c15.73,0 28.48,12.74 28.48,28.47c0,15.73 -12.75,28.48 -28.48,28.48c-15.72,0 -28.47,-12.75 -28.47,-28.48s12.75,-28.47 28.47,-28.47z"
+                fill="#109A97"
+                id="svg_6"
+                stroke="#109A97"
+                stroke-width="0"></path>
+              <path
+                d="m98.47,139.4c-16.05,0 -29.07,13.02 -29.07,29.07c0,16.06 13.02,29.08 29.07,29.08c16.06,0 29.08,-13.02 29.08,-29.08c0,-16.05 -13.02,-29.07 -29.08,-29.07zm0,0.6c15.73,0 28.48,12.75 28.48,28.47c0,15.73 -12.75,28.48 -28.48,28.48c-15.73,0 -28.47,-12.75 -28.47,-28.48c0,-15.72 12.75,-28.47 28.47,-28.47z"
+                fill="#109A97"
+                id="svg_7"
+                stroke="#109A97"
+                stroke-width="0"></path>
+              <path
+                d="m29.07,69.4c-16.05,0 -29.07,13.02 -29.07,29.07c0,16.06 13.02,29.08 29.07,29.08c16.06,0 29.08,-13.02 29.08,-29.08c0,-16.05 -13.02,-29.07 -29.08,-29.07zm0,0.6c15.73,0 28.48,12.75 28.48,28.47c0,15.73 -12.75,28.48 -28.48,28.48c-15.73,0 -28.47,-12.75 -28.47,-28.48c0,-15.72 12.74,-28.47 28.47,-28.47z"
+                fill="#109A97"
+                id="svg_8"
+                stroke="#109A97"
+                stroke-width="0"></path>
+              <text
+                fill="#000000"
+                font-family="Helvetica"
+                font-size="7"
+                font-weight="bold"
+                id="svg_13"
+                stroke="#109A97"
+                stroke-width="0"
+                text-anchor="middle"
+                x="98.52"
+                xml:space="preserve"
+                y="31.15">{banner?.svg_text0}</text
+              >
+              <text
+                fill="#000000"
+                font-family="Helvetica"
+                font-size="7"
+                font-weight="bold"
+                id="svg_14"
+                stroke="#109A97"
+                stroke-width="0"
+                text-anchor="middle"
+                x="169.16"
+                xml:space="preserve"
+                y="100.97">{banner?.svg_text1}</text
+              >
+              <text
+                fill="#000000"
+                font-family="Helvetica"
+                font-size="7"
+                font-weight="bold"
+                id="svg_15"
+                stroke="#109A97"
+                stroke-width="0"
+                text-anchor="middle"
+                transform="matrix(1 0 0 1 0 0)"
+                x="98.5"
+                xml:space="preserve"
+                y="172.8">{banner?.svg_text2}</text
+              >
+              <text
+                fill="#000000"
+                font-family="Helvetica"
+                font-size="7"
+                font-weight="bold"
+                id="svg_16"
+                stroke="#109A97"
+                stroke-width="0"
+                text-anchor="middle"
+                transform="matrix(1 0 0 1 0 0)"
+                x="29.33"
+                xml:space="preserve"
+                y="95.97">{banner?.svg_text3}</text
+              >
+              <text
+                fill="#000000"
+                font-family="Helvetica"
+                font-size="7"
+                font-weight="bold"
+                id="svg_17"
+                stroke="#109A97"
+                stroke-width="0"
+                text-anchor="middle"
+                transform="matrix(1 0 0 1 0 0)"
+                x="28.5"
+                xml:space="preserve"
+                y="104.8">{banner?.svg_text4}</text
+              >
+            </g>
+          </svg>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Features -->
-  <section class="section bg-theme-light">
-    <div class="container">
-      <div class="text-center">
-        <h2>{markdownify(feature!.title)}</h2>
-      </div>
-      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-        {
-          feature!.features.map((item: any, i: number) => (
-            <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
-              {item.icon && (
-                // <Image
-                //   class="mx-auto"
-                //   src={item.icon}
-                //   width={30}
-                //   height={30}
-                //   alt=""
-                // />
-                <img
-                  class="mx-auto"
-                  alt={item.icon}
-                  src={item.icon}
-                  width={30}
-                  height={30}
-                />
-              )}
-              <div class="mt-4">
-                <p class="h5" set:html={markdownify(item!.name)} />
-                <p class="mt-3">{item.content}</p>
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
-
-  <!-- App -->
-  <section class="section">
-    <div class="container">
-      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
-        <h5 style="margin: auto">{markdownify(app!.title)}</h5>
-        <a href={app!.google_link}>
-          <Image
-            class="mx-auto"
-            src={app?.google}
-            width={250}
-            height={130}
-            alt="Google link"
-          />
-        </a>
-
-        <a href={app!.apple_link}>
-          <Image
-            class="mx-auto"
-            src={app?.apple}
-            width={250}
-            height={130}
-            alt="Apple link"
-          />
-        </a>
-      </div>
-    </div>
-  </section>
+  <!-- Start in seconds -->
 
   <!-- Services -->
   {
@@ -213,8 +283,73 @@ const tp = useTranslatedPath(lang!);
   </script>
   <!-- ./End service -->
 
+  <!-- Features -->
+  <section class="section bg-theme-light">
+    <div class="container">
+      <div class="text-center">
+        <h2>{markdownify(feature!.title)}</h2>
+      </div>
+      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          feature!.features.map((item: any, i: number) => (
+            <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
+              {item.icon && (
+                // <Image
+                //   class="mx-auto"
+                //   src={item.icon}
+                //   width={30}
+                //   height={30}
+                //   alt=""
+                // />
+                <img
+                  class="mx-auto"
+                  alt={item.icon}
+                  src={item.icon}
+                  width={30}
+                  height={30}
+                />
+              )}
+              <div class="mt-4">
+                <p class="h5" set:html={markdownify(item!.name)} />
+                <p class="mt-3">{item.content}</p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- App -->
+  <section class="section">
+    <div class="container">
+      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
+        <h5 style="margin: auto">{markdownify(app!.title)}</h5>
+        <a href={app!.google_link}>
+          <Image
+            class="mx-auto"
+            src={app?.google}
+            width={250}
+            height={130}
+            alt="Google link"
+          />
+        </a>
+
+        <a href={app!.apple_link}>
+          <Image
+            class="mx-auto"
+            src={app?.apple}
+            width={250}
+            height={130}
+            alt="Apple link"
+          />
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Workflow -->
-  <section class="section pb-0">
+  <!-- <section class="section pb-0">
     <div class="mb-8 text-center image-center">
       <h2
         class="mx-auto max-w-[400px] font-bold leading-[44px]"
@@ -228,7 +363,7 @@ const tp = useTranslatedPath(lang!);
       width={1920}
       height={414}
     />
-  </section>
+  </section> -->
 
   <!-- Call to Action -->
   <Cta lang={lang} cta={call_to_action} />
