@@ -1,3 +1,21 @@
+@keyframes slideInRight {
+  from {
+    transform: translateX(10%); /* Start off screen to the right */
+  }
+  to {
+    transform: translateX(0); /* Slide in to its current position */
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-10%); /* Start off screen to the right */
+  }
+  to {
+    transform: translateX(0); /* Slide in to its current position */
+  }
+}
+
 .bg-banner {
   position: relative;
   background-image: url("/images/banner-background.jpg");
@@ -22,6 +40,14 @@
 .bg-banner .container {
   position: relative;
   z-index: 2;
+}
+
+.svg-anymation {
+  animation: slideInRight 1s ease forwards;
+}
+
+.headline-anymation {
+  animation: slideInLeft 1s ease forwards;
 }
 
 // section style

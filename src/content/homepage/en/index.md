@@ -1,10 +1,10 @@
 ---
 banner:
-  title_text00: Code
-  title_text01: Smart
-  title_text10: Enhance
-  title_text11: Care
-  content: Future of revenue and claims management with AI-powered coding and billing copilot so that you more time for patient care.
+  title_text00: Smart
+  title_text01: Billing
+  title_text10: Empowering
+  title_text11: Doctors
+  content: Empowering healthcare providers with AI-powered coding and billing copilots for the future of revenue and claims management.
   svg_text0: Medical Coding
   svg_text1: Billing
   svg_text2: Claims
