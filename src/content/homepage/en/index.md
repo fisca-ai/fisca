@@ -70,7 +70,7 @@ integration:
     - "/images/integration-03.png"
     - "/images/integration-04.png"
 
-# solution
+# services
 services:
   - title:
       - words:
@@ -130,23 +130,35 @@ services:
 feature:
   title: Features
   features:
-    - name: "AI medical coding"
-      icon: "/images/code.svg"
+    - title:
+        - words:
+            - teal: "AI medical coding"
+      # icon: "/images/code.svg"
       content: "We use AI to automatically identify accurate medical coding from doctors note"
-    - name: "Compliant"
-      icon: "/images/oop.svg"
+    - title:
+        - words:
+            - teal: "Compliant"
+      # icon: "/images/oop.svg"
       content: "We are compliant with the Swiss medical coding and insurance, less time to worry team insurance claims"
-    - name: "Customer Service"
-      icon: "/images/user-clock.svg"
+    - title:
+        - words:
+            - teal: "Customer Service"
+      # icon: "/images/user-clock.svg"
       content: "We are available 24*7"
-    - name: "Value for money"
-      icon: "/images/love.svg"
+    - title:
+        - words:
+            - teal: "Value for money"
+      # icon: "/images/love.svg"
       content: "We identify missed revenue opportunities that already pays for the services"
-    - name: "Private swiss cloud"
-      icon: "/images/cloud.svg"
+    - title:
+        - words:
+            - teal: "Private swiss cloud"
+      # icon: "/images/cloud.svg"
       content: "Privacy by design. We understand privacy. Your data never leaves Switzerland"
-    - name: "Bill understanding"
-      icon: "/images/phone.svg"
+    - title:
+        - words:
+            - teal: "Bill understanding"
+      # icon: "/images/phone.svg"
       content: "Scan or upload your bill to understand what each item is team."
 
 # app

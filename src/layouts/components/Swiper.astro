@@ -88,7 +88,23 @@ const { images, width, height, swiper_class } = Astro.props as SwiperProps;
   });
   document.addEventListener("astro:page-load", () => {
     new Swiper(".integration-swiper", {
-      slidesPerView: 4,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        640: {
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        // 1024: {
+        //   slidesPerView: 5,
+        // },
+      },
       modules: [Autoplay],
       autoplay: {
         delay: 3000,
