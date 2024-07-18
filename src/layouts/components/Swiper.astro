@@ -48,6 +48,15 @@ const { images, width, height, swiper_class } = Astro.props as SwiperProps;
 </div>
 
 <style>
+  .swiper-container {
+    overflow: hidden; /* Hide overflow if the SVG is larger than the container */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center; /* Center the SVG in the container */
+  }
+  img {
+    object-fit: contain; /* Ensures the SVG scales proportionally */
+  }
   .grayscale {
     filter: grayscale(100%);
     transition: filter 0.3s ease;
