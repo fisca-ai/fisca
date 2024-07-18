@@ -1,10 +1,14 @@
 ---
 banner:
-  title_text00: Smart
-  title_text01: Billing
-  title_text10: Empowering
-  title_text11: Doctors
-  content: Empowering healthcare providers with AI-powered coding and billing copilots for the future of revenue and claims management.
+  title:
+    - line:
+        - teal: Smart
+        - black: Billing
+    - line:
+        - black: Empowering
+        - teal: Care
+
+  content: Empowering healthcare providers with AI-powered diagnostic coding and billing for the future of revenue and claims management.
   svg_text0: Medical Coding
   svg_text1: Billing
   svg_text2: Claims
@@ -15,11 +19,82 @@ banner:
     link: "/contact"
     enable: true
 
+# integrations
+integration:
+  title:
+    line:
+      - black: Integrated to
+      - teal: "0"
+      - black: Healthcare systems, used by over
+      - teal: "0"
+      - black: Healthcare providers.
+  images:
+    - "/images/integration-01.png"
+    - "/images/integration-02.png"
+    - "/images/integration-03.png"
+    - "/images/integration-04.png"
+
+# solution
+services:
+  - title:
+      - line:
+          - teal: Automated
+          - black: "&"
+          - teal: Assisted
+      - line:
+          - black: Medical Coding
+    content: "Our Medical Coding Co-Pilot leverages AI to automate data processing and code assignment, significantly reducing manual workload. With NLP, it accurately interprets complex medical language, minimizing coding errors without changing your current workflow."
+    images:
+      - "/images/medical-coding.jpg"
+    button:
+      enable: true
+      label: Learn more about it
+      link: /contact
+
+  - title:
+      - line:
+          - teal: Smart
+          - black: "&"
+          - teal: Accurate
+      - line:
+          - black: Billing
+    content: "Accurate Billing is a comprehensive invoicing and payment management solution designed to ensure precise and timely billing processes. It offers features such as automated invoice generation, error detection, and detailed reporting to enhance financial accuracy and efficiency for businesses."
+    images:
+      - "/images/accurate-billing.jpg"
+    button:
+      enable: true
+      label: Learn more about it
+      link: /contact
+
+  - title:
+      - line:
+          - teal: Smart
+          - black: Claims & Re-Claims
+    content: "Claim Management is a robust system designed to streamline the process of filing, tracking, and resolving insurance claims. It offers features like automated claim processing, real-time status updates, and comprehensive reporting to ensure efficient and transparent handling of claims for both insurers and policyholders. Using AI we can automatically respond to some of the queries insurance companies have."
+    images:
+      - "/images/claim-management.jpg"
+    button:
+      enable: true
+      label: Learn more about it
+      link: /contact
+
+  - title:
+      - line:
+          - teal: Useful
+          - black: Analytics & insights
+    content: "Analytics & Insights is a specialized toolset aimed at enhancing the efficiency and accuracy of the medical billing process. It provides features like detailed financial reporting, trend analysis, and predictive modeling to help healthcare providers optimize revenue cycles, reduce billing errors, and improve patient care outcomes through data-driven decision-making."
+    images:
+      - "/images/img_4.webp"
+    button:
+      enable: true
+      label: Learn more about it
+      link: /contact
+
 # feature
 feature:
-  title: Our solutions
+  title: Features
   features:
-    - name: "AI co-pilot"
+    - name: "AI medical coding"
       icon: "/images/code.svg"
       content: "We use AI to automatically identify accurate medical coding from doctors note"
     - name: "Compliant"
@@ -45,45 +120,6 @@ app:
   apple_link: "#"
   google: /images/google.webp
   google_link: "#"
-
-# services
-services:
-  - title: "The most advanced billing automation"
-    content: "We offer the most advanced billing automation, leveraging cutting-edge technology for streamlined invoicing and payment processing, offering unparalleled efficiency and security. Intuitive interface and customizable features empower organizations to optimize their financial operations and stay ahead in the competitive business landscape with ease."
-    images:
-      - "/images/img_9.webp"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
-
-  - title: "Accurate medical coding"
-    content: "We use AI to automatically identify accurate medical coding. Our cutting-edge technology optimizes billing by ensuring targeted accuracy."
-    images:
-      - "/images/img_17.webp"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
-
-  - title: "Increase revenue and claim rate through automation"
-    content: "We identify the missed revenue opportunities and missing items in the bills. Making bills more accurate and compliant with the insurance."
-    images:
-      - "/images/img_13.webp"
-      - "/images/img_4.webp"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
-
-  - title: "We are an experienced team"
-    content: "We have decades of experience developing world-class systems. We understand privacy, compliance and customers’s needs. We are committed to providing the best possible service to our customers."
-    images:
-      - "/images/img_12.webp"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
 
 # workflow
 workflow:

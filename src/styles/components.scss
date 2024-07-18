@@ -1,4 +1,4 @@
-@keyframes slideInRight {
+@keyframes slideInLeft {
   from {
     transform: translateX(10%); /* Start off screen to the right */
   }
@@ -7,7 +7,7 @@
   }
 }
 
-@keyframes slideInLeft {
+@keyframes slideInRight {
   from {
     transform: translateX(-10%); /* Start off screen to the right */
   }
@@ -42,12 +42,20 @@
   z-index: 2;
 }
 
-.svg-anymation {
+.animate-left {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.animate-right {
   animation: slideInRight 1s ease forwards;
 }
 
-.headline-anymation {
-  animation: slideInLeft 1s ease forwards;
+.fade-slide {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade-slide.loaded {
+  opacity: 1;
 }
 
 // section style
