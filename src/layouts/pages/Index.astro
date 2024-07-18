@@ -25,7 +25,7 @@ const {
   benefits,
   integration,
   services,
-  workflow,
+  testimony,
   call_to_action,
 } = homepage!.data;
 
@@ -259,7 +259,6 @@ const tp = useTranslatedPath(lang!);
   }
 
   <script>
-    console.log("observer");
     // JavaScript to observe element visibility and trigger animation
     const observer = new IntersectionObserver(
       (entries) => {
@@ -356,7 +355,10 @@ const tp = useTranslatedPath(lang!);
   <!-- App -->
   <section class="section">
     <div class="container">
-      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-3 lg:grid-cols-5">
+      <div class="grid
+      gap-x-8
+      sm:grid-cols-3
+      lg:grid-cols-5">
         <h5 class="lg:col-start-2" style="margin: auto">
           {markdownify(app!.title)}
         </h5>
@@ -381,25 +383,64 @@ const tp = useTranslatedPath(lang!);
         </a>
       </div>
     </div>
-
-    <!-- Workflow -->
-    <!-- <section class="section pb-0">
-    <div class="mb-8 text-center image-center">
-      <h2
-        class="mx-auto max-w-[400px] font-bold leading-[44px]"
-        set:html={workflow?.title}
-      />
-      <p class="mt-3" set:html={workflow?.description} />
-    </div>
-    <Image
-      src={workflow!.image}
-      alt="workflow image"
-      width={1920}
-      height={414}
-    />
-  </section> -->
-
-    <!-- Call to Action -->
-    <Cta lang={lang} cta={call_to_action} />
   </section>
+
+  <!-- Testimony -->
+  <section class="section pb-0 bg-theme-light">
+    <div class="container">
+      <div class="text-center">
+        <h3>{markdownify(testimony!.title)}</h3>
+      </div>
+      <div class="swiper testimony-swiper w-10/12 max-w-xs mx-auto">
+        <div class="swiper-wrapper">
+          {
+            testimony.testimonies.map((testimony: any) => (
+              <div class="swiper-slide flex justify-center items-center p-4">
+                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105 flex flex-col items-center">
+                  <div class="w-32 h-32 rounded-full overflow-hidden flex justify-center items-center mb-4">
+                    <img
+                      src={testimony.image}
+                      alt={testimony.title}
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div class="p-4 text-center">
+                    <h5 class="text-primary">{testimony.title}</h5>
+                    <h6>{testimony.subtitle}</h6>
+                    <p class="text-gray-600">{testimony.content}</p>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+        <div class="pagination"></div>
+      </div>
+    </div>
+  </section>
+  <script>
+    import { Swiper } from "swiper";
+    import "swiper/css";
+    import "swiper/css/pagination";
+    import { Autoplay, Pagination } from "swiper/modules";
+
+    // astro:page-load event is fired when the page is loaded
+    document.addEventListener("astro:page-load", () => {
+      new Swiper(".testimony-swiper", {
+        modules: [Pagination, Autoplay],
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          type: "bullets",
+          el: ".testimony-swiper .pagination",
+          clickable: true,
+        },
+      });
+    });
+  </script>
+  <!-- ./End Testimony -->
+
+  <!-- Call to Action -->
+  <Cta lang={lang} cta={call_to_action} />
 </Base>

@@ -169,11 +169,22 @@ app:
   google: /images/google.webp
   google_link: "#"
 
-# workflow
-workflow:
-  title: "Find the solution to your needs with us."
-  image: "/images/main_img.webp"
-  description: ""
+# testimony
+testimony:
+  title: "See for yourself"
+  testimonies:
+    - title: "Dr A"
+      subtitle: "Hospital A"
+      image: "/images/testimony1.jpg"
+      content: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+    - title: "Dr B"
+      subtitle: "Hospital B"
+      image: "/images/testimony1.jpg"
+      content: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+    - title: "Dr C"
+      subtitle: "Hospital C"
+      image: "/images/testimony1.jpg"
+      content: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
 
 # call_to_action
 call_to_action:
