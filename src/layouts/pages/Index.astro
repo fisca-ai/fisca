@@ -42,7 +42,7 @@ const tp = useTranslatedPath(lang!);
       <div class="row flex flex-wrap lg:flex-nowrap items-center">
         <div class="lg:w-1/2 pr-4 lg:order-1">
           <div class="text-center lg:text-left animate-right">
-            <Title title={banner!.title} tag="h1" />
+            <Title title={banner!.title} tag="h2" />
 
             {
               banner?.content && (
@@ -246,7 +246,7 @@ const tp = useTranslatedPath(lang!);
               <div
                 class={`service-content text-center lg:text-left mt-5 md:mt-0 ${!isEvent && "md:order-1"}`}
               >
-                <Title title={service!.title} tag="h2" />
+                <Title title={service!.title} tag="h3" />
                 <p class="mt-4 mb-2">{service?.content}</p>
                 {service?.button?.enable && (
                   <a

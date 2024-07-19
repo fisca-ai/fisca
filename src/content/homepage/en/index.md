@@ -2,7 +2,7 @@
 banner:
   title:
     - words:
-        - teal: Smart
+        - teal: Intelligent
         - black: Billing
       end: "."
     - words:
@@ -90,10 +90,7 @@ services:
 
   - title:
       - words:
-          - teal: Smart
-          - black: "&"
           - teal: Accurate
-      - words:
           - black: Billing
     content: "Accurate Billing is a comprehensive invoicing and payment management solution designed to ensure precise and timely billing processes. It offers features such as automated invoice generation, error detection, and detailed reporting to enhance financial accuracy and efficiency for businesses."
     images:
@@ -105,7 +102,8 @@ services:
 
   - title:
       - words:
-          - teal: Smart
+          - teal: Sophisticated
+      - words:
           - black: Claims & Re-Claims
     content: "Claim Management is a robust system designed to streamwords the process of filing, tracking, and resolving insurance claims. It offers features like automated claim processing, real-time status updates, and comprehensive reporting to ensure efficient and transparent handling of claims for both insurers and policyholders. Using AI we can automatically respond to some of the queries insurance companies have."
     images:
@@ -117,7 +115,8 @@ services:
 
   - title:
       - words:
-          - teal: Useful
+          - teal: Comprehensive
+      - words:
           - black: Analytics & insights
     content: "Analytics & Insights is a specialized toolset aimed at enhancing the efficiency and accuracy of the medical billing process. It provides features like detailed financial reporting, trend analysis, and predictive modeling to help healthcare providers optimize revenue cycles, reduce billing errors, and improve patient care outcomes through data-driven decision-making."
     images:

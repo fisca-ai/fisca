@@ -103,9 +103,9 @@ services:
 
   - title:
       - words:
-          - teal: Smart
-          - black: Richieste &
-          - teal: Ri-Richieste
+          - teal: Sofisticato
+      - words:
+          - black: Richieste & Ri-Richieste
     content: "Claim Management è un sistema robusto progettato per semplificare il processo di presentazione, tracciamento e risoluzione delle richieste di risarcimento assicurativo. Offre funzionalità come l'elaborazione automatica delle richieste, aggiornamenti di stato in tempo reale e report completi per garantire una gestione efficiente e trasparente delle richieste per assicuratori e assicurati. Utilizzando l'IA possiamo rispondere automaticamente ad alcune delle richieste delle compagnie assicurative."
     images:
       - "/images/claim-management_it.png"
@@ -116,7 +116,7 @@ services:
 
   - title:
       - words:
-          - teal: Utili
+          - teal: Completo
           - black: Analisi & Approfondimenti
     content: "Analytics & Insights è un insieme di strumenti specializzati mirati a migliorare l'efficienza e la precisione del processo di fatturazione medica. Offre funzionalità come report finanziari dettagliati, analisi delle tendenze e modellazione predittiva per aiutare i fornitori di assistenza sanitaria a ottimizzare i cicli di entrate, ridurre gli errori di fatturazione e migliorare i risultati dei pazienti attraverso decisioni basate sui dati."
     images:

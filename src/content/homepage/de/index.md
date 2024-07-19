@@ -88,10 +88,7 @@ services:
 
   - title:
       - words:
-          - teal: Smart
-          - black: "&"
           - teal: Genau
-      - words:
           - black: Abrechnung
     content: "Accurate Billing ist eine umfassende Rechnungs- und Zahlungsmanagementlösung, die präzise und rechtzeitige Abrechnungsprozesse sicherstellt. Sie bietet Funktionen wie automatisierte Rechnungserstellung, Fehlererkennung und detaillierte Berichte, um die finanzielle Genauigkeit und Effizienz für Unternehmen zu verbessern."
     images:
@@ -103,9 +100,9 @@ services:
 
   - title:
       - words:
-          - teal: Smart
-          - black: Forderungen &
-          - teal: Rückforderungen
+          - teal: Anspruchsvoll
+      - words:
+          - black: Forderungen & Rückforderungen
     content: "Claim Management ist ein robustes System, das den Prozess der Einreichung, Verfolgung und Lösung von Versicherungsansprüchen strafft. Es bietet Funktionen wie automatisierte Anspruchsverarbeitung, Echtzeit-Statusaktualisierungen und umfassende Berichte, um eine effiziente und transparente Bearbeitung von Ansprüchen sowohl für Versicherer als auch für Versicherte sicherzustellen. Mit KI können wir automatisch auf einige Anfragen von Versicherungsgesellschaften reagieren."
     images:
       - "/images/claim-management_de.png"
@@ -116,7 +113,8 @@ services:
 
   - title:
       - words:
-          - teal: Nützliche
+          - teal: Umfassend
+      - words:
           - black: Analysen & Einblicke
     content: "Analytics & Insights ist ein spezialisiertes Toolset, das darauf abzielt, die Effizienz und Genauigkeit des medizinischen Abrechnungsprozesses zu verbessern. Es bietet Funktionen wie detaillierte Finanzberichte, Trendanalysen und prädiktive Modellierung, um Gesundheitsdienstleistern zu helfen, Einnahmenzyklen zu optimieren, Abrechnungsfehler zu reduzieren und Patientenergebnisse durch datenbasierte Entscheidungsfindung zu verbessern."
     images:
