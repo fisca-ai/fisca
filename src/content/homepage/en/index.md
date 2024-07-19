@@ -97,7 +97,7 @@ services:
           - black: Billing
     content: "Accurate Billing is a comprehensive invoicing and payment management solution designed to ensure precise and timely billing processes. It offers features such as automated invoice generation, error detection, and detailed reporting to enhance financial accuracy and efficiency for businesses."
     images:
-      - "/images/accurate-billing.png"
+      - "/images/accurate-billing.jpeg"
     button:
       enable: true
       label: Learn more about it
@@ -190,8 +190,6 @@ testimony:
 # call_to_action
 call_to_action:
   title: Ready to get started?
-  content: Click below and contact us.
-  image: "/images/cta.png"
   button:
     enable: true
     label: "Contact Us"

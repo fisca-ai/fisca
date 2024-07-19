@@ -95,7 +95,7 @@ services:
           - black: Fatturazione
     content: "Accurate Billing è una soluzione completa per la gestione della fatturazione e dei pagamenti progettata per garantire processi di fatturazione precisi e tempestivi. Offre funzionalità come la generazione automatica delle fatture, la rilevazione degli errori e report dettagliati per migliorare la precisione finanziaria e l'efficienza delle aziende."
     images:
-      - "/images/accurate-billing.png"
+      - "/images/accurate-billing.jpeg"
     button:
       enable: true
       label: "Scopri di più"

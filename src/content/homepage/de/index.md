@@ -95,7 +95,7 @@ services:
           - black: Abrechnung
     content: "Accurate Billing ist eine umfassende Rechnungs- und Zahlungsmanagementlösung, die präzise und rechtzeitige Abrechnungsprozesse sicherstellt. Sie bietet Funktionen wie automatisierte Rechnungserstellung, Fehlererkennung und detaillierte Berichte, um die finanzielle Genauigkeit und Effizienz für Unternehmen zu verbessern."
     images:
-      - "/images/accurate-billing.png"
+      - "/images/accurate-billing.jpeg"
     button:
       enable: true
       label: "Erfahren Sie mehr darüber"
