@@ -7,8 +7,8 @@
     "favicon": "/images/favicon.png",
     "logo": "/images/logo_green.png",
     "logo_green": "/images/logo_green.png",
-    "logo_width": "180",
-    "logo_height": "50",
+    "logo_width": "100",
+    "logo_height": "60",
     "logo_text": "Astroplate"
   },
 
