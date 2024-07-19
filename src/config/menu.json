@@ -1,12 +1,12 @@
 {
   "main": [
     {
-      "name": "Home",
-      "url": "/"
+      "name": "Pricing",
+      "url": "/pricing"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "Team",
+      "url": "/team"
     },
     {
       "name": "Contact",
@@ -18,8 +18,8 @@
       "name": "Company",
       "menu": [
         {
-          "text": "About",
-          "url": "/about"
+          "text": "Team",
+          "url": "/team"
         },
         {
           "text": "Quick Start",

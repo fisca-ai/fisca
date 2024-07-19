@@ -27,7 +27,7 @@ const t = useTranslations(lang!);
 const tp = useTranslatedPath(lang!);
 ---
 
-<header class="header">
+<header class="header sticky top-0 z-10 bg-white shadow">
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0">
@@ -61,7 +61,7 @@ const tp = useTranslatedPath(lang!);
 
     <ul
       id="nav-menu"
-      class="navbar-nav order-3 hidden w-full md:order-1 md:flex md:w-auto md:space-x-3"
+      class="navbar-nav order-3 hidden w-full md:order-1 md:flex md:w-auto md:space-x-2"
     >
       {
         main.map((menu) => (
@@ -80,7 +80,7 @@ const tp = useTranslatedPath(lang!);
                       <a
                         href={tp(child.url)}
                         class={`nav-dropdown-link block ${
-                          pathname === child.url && "nav-link-active"
+                          pathname === tp(child.url) && "nav-link-active"
                         }`}
                       >
                         {t(child.name)}
@@ -94,7 +94,7 @@ const tp = useTranslatedPath(lang!);
                 <a
                   href={tp(menu.url)}
                   class={`nav-link block ${
-                    pathname === menu.url && "nav-link-active"
+                    pathname === tp(menu.url) && "nav-link-active"
                   }`}
                 >
                   {t(menu.name)}

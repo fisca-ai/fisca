@@ -35,32 +35,6 @@ const suffix = Astro.url.pathname.replace(`/${lang}`, "");
   </ul>
 </div>
 
-<!-- <script>
-  import { setCookie } from "@/lib/utils/cookies";
-
-  console.log("DOM fully loaded and parsed");
-  const languagePicker = document.getElementById("language-picker");
-
-  console.log("language-picker element found");
-
-  const links = languagePicker?.querySelectorAll(".nav-dropdown-link");
-
-  console.log("Found links in language-picker:", links);
-
-  links?.forEach((link) => {
-    console.log("Attaching event listener to link:", link);
-    link.addEventListener("click", (event) => {
-      alert("Clicked:" + link);
-      event.preventDefault(); // Prevent default navigation
-      const target = event.target as HTMLAnchorElement;
-      const lang = target?.getAttribute("data-lang");
-      console.log("setCookie", document.cookie);
-      setCookie("lang", lang!, 360);
-      // window.location.href = target.href;
-    });
-  });
-</script> -->
-
 <script is:inline>
   // Add event listeners to fire confetti when a button is clicked.
   document.querySelectorAll(".nav-dropdown-link").forEach((link) => {

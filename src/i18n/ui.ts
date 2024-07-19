@@ -15,7 +15,7 @@ type Ui = {
 export const ui: Ui = {
   de: {
     Home: "Startseite",
-    About: "Über uns",
+    Team: "Über uns",
     Company: "Firma",
     Products: "Produkte",
     Support: "Hilfe",
@@ -36,7 +36,7 @@ export const ui: Ui = {
   },
   en: {
     Home: "Home",
-    About: "About Us",
+    Team: "Team",
     Company: "Company",
     Products: "Products",
     Support: "Support",
@@ -57,7 +57,7 @@ export const ui: Ui = {
   },
   fr: {
     Home: "Accueil",
-    About: "A propos",
+    Team: "A propos",
     Company: "Entreprise",
     Products: "Produits",
     Support: "Soutien",
@@ -78,7 +78,7 @@ export const ui: Ui = {
   },
   it: {
     Home: "Home",
-    About: "Chi siamo",
+    Team: "Chi siamo",
     Company: "Azienda",
     Products: "Prodotti",
     Support: "Supporto",
