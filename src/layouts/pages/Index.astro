@@ -130,7 +130,20 @@ const tp = useTranslatedPath(lang!);
                 text-anchor="middle"
                 x="98.52"
                 xml:space="preserve"
-                y="31.15">{banner?.svg_text0}</text
+                y="27">{banner?.svg_text0}</text
+              >
+              <text
+                fill="#000000"
+                font-family="Helvetica"
+                font-size="7"
+                font-weight="bold"
+                id="svg_13"
+                stroke="#109A97"
+                stroke-width="0"
+                text-anchor="middle"
+                x="98.52"
+                xml:space="preserve"
+                y="36">{banner?.svg_text1}</text
               >
               <text
                 fill="#000000"
@@ -143,7 +156,7 @@ const tp = useTranslatedPath(lang!);
                 text-anchor="middle"
                 x="169.16"
                 xml:space="preserve"
-                y="100.97">{banner?.svg_text1}</text
+                y="100.97">{banner?.svg_text2}</text
               >
               <text
                 fill="#000000"
@@ -157,7 +170,7 @@ const tp = useTranslatedPath(lang!);
                 transform="matrix(1 0 0 1 0 0)"
                 x="98.5"
                 xml:space="preserve"
-                y="172.8">{banner?.svg_text2}</text
+                y="172.8">{banner?.svg_text3}</text
               >
               <text
                 fill="#000000"
@@ -171,7 +184,7 @@ const tp = useTranslatedPath(lang!);
                 transform="matrix(1 0 0 1 0 0)"
                 x="29.33"
                 xml:space="preserve"
-                y="95.97">{banner?.svg_text3}</text
+                y="95.97">{banner?.svg_text4}</text
               >
               <text
                 fill="#000000"
@@ -185,7 +198,7 @@ const tp = useTranslatedPath(lang!);
                 transform="matrix(1 0 0 1 0 0)"
                 x="28.5"
                 xml:space="preserve"
-                y="104.8">{banner?.svg_text4}</text
+                y="104.8">{banner?.svg_text5}</text
               >
             </g>
           </svg>
@@ -220,7 +233,7 @@ const tp = useTranslatedPath(lang!);
           <div class="container">
             <div class="items-center gap-8 md:grid md:grid-cols-2">
               <div
-                class={`service-carousel ${!isEvent && "md:order-2"} ${isEvent ? "animatedElementRight" : "animatedElementLeft"}`}
+                class={`service-carousel ${!isEvent && "md:order-2"} ${isEvent ? "animateElementRight" : "animateElementLeft"}`}
               >
                 <Swiper
                   images={service!.images}
@@ -259,47 +272,61 @@ const tp = useTranslatedPath(lang!);
   }
 
   <script>
-    // JavaScript to observe element visibility and trigger animation
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (entry.target.classList.contains("animatedElementLeft")) {
-              entry.target.classList.add("animate-left");
-            } else if (
-              entry.target.classList.contains("animatedElementRight")
-            ) {
-              entry.target.classList.add("animate-right");
+    let observer: IntersectionObserver | null;
+    function initializeIntersectionObserver() {
+      // JavaScript to observe element visibility and trigger animation
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              if (entry.target.classList.contains("animateElementLeft")) {
+                entry.target.classList.add("animate-left");
+              } else if (
+                entry.target.classList.contains("animateElementRight")
+              ) {
+                entry.target.classList.add("animate-right");
+              }
             }
-          }
-        });
-      },
-      {
-        threshold: 0.5, // Trigger when 50% of element is visible
+          });
+        },
+        {
+          threshold: 0.5, // Trigger when 50% of element is visible
+        }
+      );
+
+      // Target the element to observe
+      const animateElementLeft =
+        document.getElementsByClassName("animateElementLeft");
+      const animateElementRight = document.getElementsByClassName(
+        "animateElementRight"
+      );
+
+      // Start observing the element
+      if (animateElementLeft) {
+        Array.from(animateElementLeft).forEach((element) =>
+          observer!.observe(element)
+        );
       }
-    );
-
-    // Target the element to observe
-    const animatedElementLeft = document.getElementsByClassName(
-      "animatedElementLeft"
-    );
-    const animatedElementRight = document.getElementsByClassName(
-      "animatedElementRight"
-    );
-    console.log("animatedElementLeft:", animatedElementLeft);
-    console.log("animatedElementRight:", animatedElementRight);
-
-    // Start observing the element
-    if (animatedElementLeft) {
-      Array.from(animatedElementLeft).forEach((element) =>
-        observer.observe(element)
-      );
+      if (animateElementRight) {
+        Array.from(animateElementRight).forEach((element) =>
+          observer!.observe(element)
+        );
+      }
     }
-    if (animatedElementRight) {
-      Array.from(animatedElementRight).forEach((element) =>
-        observer.observe(element)
-      );
+
+    function removeExistingObserver() {
+      if (observer) {
+        observer.disconnect();
+        observer = null;
+      }
     }
+
+    document.addEventListener("astro:page-load", () => {
+      // Remove existing observer
+      removeExistingObserver();
+      // Initialize on page load
+      initializeIntersectionObserver();
+    });
   </script>
   <!-- ./End service -->
 

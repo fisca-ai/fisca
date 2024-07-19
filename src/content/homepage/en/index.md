@@ -11,11 +11,12 @@ banner:
       end: "."
 
   content: Empowering healthcare providers with AI-powered diagnostic coding and billing for the future of revenue and claims management.
-  svg_text0: Medical Coding
-  svg_text1: Billing
-  svg_text2: Claims
-  svg_text3: Analytics &
-  svg_text4: Insights
+  svg_text0: Medical
+  svg_text1: Coding
+  svg_text2: Billing
+  svg_text3: Claims
+  svg_text4: Analytics &
+  svg_text5: Insights
   button:
     label: "Learn more about our solutions"
     link: "/contact"
@@ -108,7 +109,7 @@ services:
           - black: Claims & Re-Claims
     content: "Claim Management is a robust system designed to streamwords the process of filing, tracking, and resolving insurance claims. It offers features like automated claim processing, real-time status updates, and comprehensive reporting to ensure efficient and transparent handling of claims for both insurers and policyholders. Using AI we can automatically respond to some of the queries insurance companies have."
     images:
-      - "/images/claim-management.png"
+      - "/images/claim-management_en.png"
     button:
       enable: true
       label: Learn more about it

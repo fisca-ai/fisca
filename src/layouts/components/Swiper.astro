@@ -49,13 +49,12 @@ const { images, width, height, swiper_class } = Astro.props as SwiperProps;
 
 <style>
   .swiper-container {
-    overflow: hidden; /* Hide overflow if the SVG is larger than the container */
-    /* display: flex; */
+    overflow: hidden;
     align-items: center;
-    justify-content: center; /* Center the SVG in the container */
+    justify-content: center;
   }
   img {
-    object-fit: contain; /* Ensures the SVG scales proportionally */
+    object-fit: contain;
   }
   .grayscale {
     filter: grayscale(100%);
@@ -112,31 +111,48 @@ const { images, width, height, swiper_class } = Astro.props as SwiperProps;
     });
   });
 
-  // Lazy load images when they come into view
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const img = entry.target.querySelectorAll("img");
-          img.forEach((img) => {
-            if (img && !img.src) {
-              img.src = img.dataset.src as string;
-              img.onload = () => {
-                img.classList.add("loaded");
-              };
-            }
-          });
-        }
-      });
-    },
-    {
-      threshold: 0.5, // Trigger when 50% of element is visible
+  let observer: IntersectionObserver | null;
+  function initializeIntersectionObserver() {
+    // Lazy load images when they come into view
+    observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const img = entry.target.querySelectorAll("img");
+            img.forEach((img) => {
+              if (img && !img.src) {
+                img.src = img.dataset.src as string;
+                img.onload = () => {
+                  img.classList.add("loaded");
+                };
+              }
+            });
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of element is visible
+      }
+    );
+
+    // Target the Swiper slides
+    const swiperSlides = document.querySelectorAll(".swiper-container");
+
+    // Start observing each Swiper slide
+    swiperSlides.forEach((slide) => observer!.observe(slide));
+  }
+
+  function removeExistingObserver() {
+    if (observer) {
+      observer.disconnect();
+      observer = null;
     }
-  );
+  }
 
-  // Target the Swiper slides
-  const swiperSlides = document.querySelectorAll(".swiper-container");
-
-  // Start observing each Swiper slide
-  swiperSlides.forEach((slide) => observer.observe(slide));
+  document.addEventListener("astro:page-load", () => {
+    // Remove existing observer
+    removeExistingObserver();
+    // Initialize on page load
+    initializeIntersectionObserver();
+  });
 </script>
