@@ -12,12 +12,12 @@ At Fisca AI, we specialize in applying AI to solve medical billing problems, sav
 
 ### [Co-Founder 1 Name]
 
-![Co-Founder 1 Photo](url-to-photo1.jpg)
+![Co-Founder 1 Photo](/images/image-placeholder.png)
 [Co-Founder 1 Name] brings over [number] years of experience in [field or industry]. Before founding [Your Startup Name], [he/she/they] worked at [previous notable job or achievement]. [He/She/They] holds a [degree] in [field] from [university]. In [his/her/their] free time, [he/she/they] enjoys [hobby or interest].
 
 ### [Co-Founder 2 Name]
 
-![Co-Founder 2 Photo](url-to-photo2.jpg)
+![Co-Founder 2 Photo](/images/image-placeholder.png)
 [Co-Founder 2 Name] has a background in [industry or field], with a special focus on [specific area of expertise]. Prior to starting [Your Startup Name], [he/she/they] was [a previous job role or achievement]. [Co-Founder 2] earned [his/her/their] [degree] from [university], and is passionate about [interest or cause].
 
 ## Partner With Us
