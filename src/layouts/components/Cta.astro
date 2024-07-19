@@ -9,15 +9,17 @@ const tp = useTranslatedPath(lang);
 ---
 
 <section class="section">
-  <div class="container flex items-center justify-between">
+  <div
+    class="container flex flex-col md:flex-row items-center justify-center text-center md:text-left"
+  >
     <div class="mt-5 md:mt-0 md:w-auto lg:w-auto">
       <h2>{cta?.title}</h2>
     </div>
-    <div>
+    <div class="mt-4 md:mt-0 md:ml-4">
       {
         cta?.button?.enable && (
           <a
-            class="btn btn-primary mt-4 md:mt-0"
+            class="btn btn-primary"
             href={tp(cta.button.link)}
             rel={cta.button.rel}
           >
