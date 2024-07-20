@@ -116,7 +116,7 @@ services:
           - black: Analisi & Approfondimenti
     content: "Analytics & Insights è un insieme di strumenti specializzati mirati a migliorare l'efficienza e la precisione del processo di fatturazione medica. Offre funzionalità come report finanziari dettagliati, analisi delle tendenze e modellazione predittiva per aiutare i fornitori di assistenza sanitaria a ottimizzare i cicli di entrate, ridurre gli errori di fatturazione e migliorare i risultati dei pazienti attraverso decisioni basate sui dati."
     images:
-      - "/images/img_4.webp"
+      - "/images/analytics-insights.jpeg"
     button:
       enable: true
       label: "Scopri di più"
@@ -154,9 +154,9 @@ feature:
 # app
 app:
   title: "Comprendi le tue fatture"
-  apple: /images/apple.webp
+  apple: /images/apple.png
   apple_link: "#"
-  google: /images/google.webp
+  google: /images/google.png
   google_link: "#"
 
 # testimony

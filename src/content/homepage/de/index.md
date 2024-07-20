@@ -116,7 +116,7 @@ services:
           - black: Analysen & Einblicke
     content: "Analytics & Insights ist ein spezialisiertes Toolset, das darauf abzielt, die Effizienz und Genauigkeit des medizinischen Abrechnungsprozesses zu verbessern. Es bietet Funktionen wie detaillierte Finanzberichte, Trendanalysen und prädiktive Modellierung, um Gesundheitsdienstleistern zu helfen, Einnahmenzyklen zu optimieren, Abrechnungsfehler zu reduzieren und Patientenergebnisse durch datenbasierte Entscheidungsfindung zu verbessern."
     images:
-      - "/images/img_4.webp"
+      - "/images/analytics-insights.jpeg"
     button:
       enable: true
       label: "Erfahren Sie mehr darüber"
@@ -154,9 +154,9 @@ feature:
 # app
 app:
   title: "Verstehen Sie Ihre Rechnungen"
-  apple: /images/apple.webp
+  apple: /images/apple.png
   apple_link: "#"
-  google: /images/google.webp
+  google: /images/google.png
   google_link: "#"
 
 # testimony

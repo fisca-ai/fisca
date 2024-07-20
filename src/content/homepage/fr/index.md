@@ -114,7 +114,7 @@ services:
           - black: Analyses & Perspectives
     content: "Analytics & Insights est un ensemble d'outils spécialisés visant à améliorer l'efficacité et la précision du processus de facturation médicale. Il offre des fonctionnalités telles que des rapports financiers détaillés, des analyses de tendances et une modélisation prédictive pour aider les prestataires de soins de santé à optimiser les cycles de revenus, à réduire les erreurs de facturation et à améliorer les résultats des patients grâce à une prise de décision basée sur les données."
     images:
-      - "/images/img_4.webp"
+      - "/images/analytics-insights.jpeg"
     button:
       enable: true
       label: "En savoir plus"
@@ -152,9 +152,9 @@ feature:
 # app
 app:
   title: "Comprenez vos factures"
-  apple: /images/apple.webp
+  apple: /images/apple.png
   apple_link: "#"
-  google: /images/google.webp
+  google: /images/google.png
   google_link: "#"
 
 # testimony

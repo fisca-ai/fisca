@@ -118,7 +118,7 @@ services:
           - black: Analytics & insights
     content: "Analytics & Insights is a specialized toolset aimed at enhancing the efficiency and accuracy of the medical billing process. It provides features like detailed financial reporting, trend analysis, and predictive modeling to help healthcare providers optimize revenue cycles, reduce billing errors, and improve patient care outcomes through data-driven decision-making."
     images:
-      - "/images/img_4.webp"
+      - "/images/analytics-insights.jpeg"
     button:
       enable: true
       label: Learn more about it
@@ -162,9 +162,9 @@ feature:
 # app
 app:
   title: "Understand your bills"
-  apple: /images/apple.webp
+  apple: /images/apple.png
   apple_link: "#"
-  google: /images/google.webp
+  google: /images/google.png
   google_link: "#"
 
 # testimony
