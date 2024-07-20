@@ -11,11 +11,14 @@ const { Content } = await entry!.render();
 ---
 
 <Base lang={lang} title={entry!.data.title}>
-  <section class="section">
-    <div class="container">
-      <div class="flex h-[40vh] items-center justify-center">
-        <div class="text-center">
-          <h1 class="mb-4" set:html={markdownify(entry!.data.title)} />
+  <section class="section bg-gray-100 py-12">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-center">
+        <div class="text-center prose mx-auto prose-teal prose-img:rounded-xl">
+          <h1
+            class="mb-4 font-bold text-3xl md:text-4xl lg:text-5xl text-primary"
+            set:html={markdownify(entry!.data.title)}
+          />
           <Content />
         </div>
       </div>
