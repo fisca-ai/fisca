@@ -75,9 +75,7 @@ integration:
 services:
   - title:
       - words:
-          - teal: Automated
-          - black: "&"
-          - teal: Assisted
+          - teal: Automated & Assisted
       - words:
           - black: Medical Coding
     content: "Our Medical Coding Co-Pilot leverages AI to automate data processing and code assignment, significantly reducing manual workload. With NLP, it accurately interprets complex medical language, minimizing coding errors without changing your current workflow."

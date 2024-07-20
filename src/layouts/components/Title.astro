@@ -24,7 +24,7 @@ const { title, tag: Element = "h1" } = Astro.props as TitleProps;
   title.map((line: Title, i: number) => (
     <Element class="font-bold">
       {line.words.map((word: Word, j: number) => (
-        <span>
+        <span class="inline-block sm:block">
           <span class="text-primary">
             {word?.teal}
             {word?.teal && j == line.words.length - 1 && (
