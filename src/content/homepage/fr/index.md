@@ -73,9 +73,7 @@ integration:
 services:
   - title:
       - words:
-          - teal: Automatisé
-          - black: "&"
-          - teal: Assisté
+          - teal: Automatisé & Assisté
       - words:
           - black: Codification Médicale
     content: "Notre Medical Coding Co-Pilot utilise l'IA pour automatiser le traitement des données et l'attribution des codes, réduisant ainsi considérablement la charge de travail manuelle. Avec le NLP, il interprète avec précision le langage médical complexe, minimisant les erreurs de codage sans changer votre flux de travail actuel."

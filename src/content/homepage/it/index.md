@@ -73,9 +73,7 @@ integration:
 services:
   - title:
       - words:
-          - teal: Automatizzato
-          - black: "&"
-          - teal: Assistito
+          - teal: Automatizzato & Assistito
       - words:
           - black: Codifica Medica
     content: "Il nostro Medical Coding Co-Pilot sfrutta l'IA per automatizzare l'elaborazione dei dati e l'assegnazione dei codici, riducendo significativamente il carico di lavoro manuale. Con il NLP, interpreta accuratamente il linguaggio medico complesso, minimizzando gli errori di codifica senza cambiare il tuo flusso di lavoro attuale."
@@ -88,8 +86,6 @@ services:
 
   - title:
       - words:
-          - teal: Smart
-          - black: "&"
           - teal: Precisa
       - words:
           - black: Fatturazione
