@@ -6,7 +6,8 @@ export const prerender = false;
 
 const lang = Astro.cookies.get("lang")?.value ?? Astro.preferredLocale ?? "en";
 
-// Astro.cookies.set("lang", lang);
+// Server side cookie.
+Astro.cookies.set("lang", lang);
 ---
 
 <BaseIndex lang={Object.keys(languages).includes(lang) ? lang : "en"} />

@@ -5,7 +5,7 @@ draft: false
 plans:
   - title: Basic Plan
     subtitle: Best For Small Individuals
-    price: 49
+    price: 0
     type: month
     features:
       - Express Service
@@ -17,7 +17,7 @@ plans:
 
   - title: Professional Plan
     subtitle: Best For Professionals
-    price: 69
+    price: 100
     type: month
     recommended: true
     features:
@@ -32,7 +32,7 @@ plans:
 
   - title: Business Plan
     subtitle: Best For Large Individuals
-    price: 99
+    price: 500
     type: month
     features:
       - Express Service
