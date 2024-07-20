@@ -7,5 +7,5 @@ info:
   contacts:
     - "Téléphone : +41 798 766 832"
     - "Courriel : [info@fisca.ai](mailto:info@fisca.ai)"
-    - "Adresse : Hügeslstraße 8, 8002, Zürich"
+    - "Adresse : Hügelstrasse 8, 8002, Zürich"
 ---
