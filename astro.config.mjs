@@ -12,9 +12,6 @@ import pageInsight from "astro-page-insight";
 import robots from "astro-robots";
 import metaTags from "astro-meta-tags";
 
-import sentry from "@sentry/astro";
-import spotlightjs from "@spotlightjs/astro";
-
 // https://astro.build/config
 export default defineConfig({
   output: "hybrid",
@@ -30,7 +27,7 @@ export default defineConfig({
     }
   }), AutoImport({
     imports: ["@/shortcodes/Button", "@/shortcodes/Accordion", "@/shortcodes/Notice", "@/shortcodes/Video", "@/shortcodes/Youtube", "@/shortcodes/Tabs", "@/shortcodes/Tab"]
-  }), mdx(), pageInsight(), robots(), metaTags(), sentry(), spotlightjs()],
+  }), mdx(), pageInsight(), robots(), metaTags()],
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, {
       test: "Table of contents"
