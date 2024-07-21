@@ -14,12 +14,12 @@
 }
 
 .header {
-  @apply bg-white;
+  @apply bg-white sticky;
 }
 
 // navbar items
 .navbar {
-  @apply relative flex flex-wrap items-center justify-between md:py-[9px] py-[14px] px-4 md:px-0;
+  @apply relative flex flex-wrap items-center justify-between md:py-[9px] py-[14px] px-4;
 }
 
 .navbar-brand {
