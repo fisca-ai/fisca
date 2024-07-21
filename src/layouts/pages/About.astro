@@ -1,0 +1,81 @@
+---
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import { getEntryBySlug } from "astro:content";
+
+// Fetch the content entry
+const { lang } = Astro.props;
+const entry = await getEntryBySlug("about", lang!);
+
+// Destructure frontmatter
+const { title, story, task, founders, partner } = entry!.data;
+---
+
+<Base lang={lang} title={title}>
+  <section class="section bg-theme-light">
+    <div class="container mx-auto text-center">
+      <h1 class="mb-4 text-primary">
+        {title}
+      </h1>
+      <div>
+        <div
+          class="prose prose-teal prose-a:text-primary max-w-none"
+          set:html={markdownify(story.content)}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container mx-auto text-center">
+      <h2 class="mb-4 text-primary">
+        {task.title}
+      </h2>
+      <div>
+        <div
+          class="prose prose-teal prose-a:text-primary max-w-none"
+          set:html={markdownify(task.content)}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-theme-light">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        {
+          founders.map((founder: any) => (
+            <div class="text-center p-4 bg-white rounded-lg shadow-lg">
+              <img
+                src={founder.image}
+                alt={founder.name}
+                class="mx-auto mb-4 rounded-full w-32 h-32 object-cover"
+              />
+              <h3 class="text-xl font-semibold text-primary">{founder.name}</h3>
+              <div>
+                <div
+                  class="prose prose-teal prose-a:text-primary max-w-none"
+                  set:html={markdownify(founder.content)}
+                />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container mx-auto text-center">
+      <h2 class="mb-4 text-primary">
+        {partner.title}
+      </h2>
+      <div>
+        <div
+          class="prose prose-teal prose-a:text-primary max-w-none"
+          set:html={markdownify(partner.opportunity)}
+        />
+      </div>
+    </div>
+  </section>
+</Base>

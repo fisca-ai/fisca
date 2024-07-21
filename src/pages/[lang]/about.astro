@@ -1,5 +1,5 @@
 ---
-import BaseTeam from "@/layouts/pages/Team.astro";
+import BaseAbout from "@/layouts/pages/About.astro";
 import { languages } from "@/i18n/ui";
 
 export const prerender = true;
@@ -13,4 +13,4 @@ export async function getStaticPaths() {
 const { lang } = Astro.params;
 ---
 
-<BaseTeam lang={lang} />
+<BaseAbout lang={lang} />

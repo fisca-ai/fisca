@@ -5,8 +5,8 @@
       "url": "/pricing"
     },
     {
-      "name": "Team",
-      "url": "/team"
+      "name": "About Us",
+      "url": "/about"
     },
     {
       "name": "Contact",
@@ -18,8 +18,8 @@
       "name": "Company",
       "menu": [
         {
-          "text": "Team",
-          "url": "/team"
+          "text": "About Us",
+          "url": "/about"
         }
       ]
     },

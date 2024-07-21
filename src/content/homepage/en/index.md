@@ -137,7 +137,7 @@ feature:
         - words:
             - teal: "Compliant"
       # icon: "/images/oop.svg"
-      content: "We are compliant with the Swiss medical coding and insurance, less time to worry team insurance claims"
+      content: "We are compliant with the Swiss medical coding and insurance, less time to worry about insurance claims"
     - title:
         - words:
             - teal: "Customer Service"
@@ -157,7 +157,7 @@ feature:
         - words:
             - teal: "Bill understanding"
       # icon: "/images/phone.svg"
-      content: "Scan or upload your bill to understand what each item is team."
+      content: "Scan or upload your bill to understand what each item is about."
 
 # app
 app:
