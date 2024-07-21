@@ -136,4 +136,28 @@ const tp = useTranslatedPath(lang!);
       )
     }
   </nav>
+  <div
+    id="header_progress_bar"
+    class="bg-primary top-0 left-0 relative z-[9999] w-0 h-[4px]"
+  >
+  </div>
 </header>
+
+<script>
+  window.onscroll = function () {
+    ScrollIndicator();
+  };
+
+  function ScrollIndicator() {
+    var winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    var height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    var progress_bar = document.getElementById("header_progress_bar");
+    if (progress_bar) {
+      progress_bar.style.width = scrolled + "%";
+    }
+  }
+</script>

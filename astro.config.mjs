@@ -7,80 +7,62 @@ import { defineConfig, squooshImageService } from "astro/config";
 import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
-
 import netlify from "@astrojs/netlify";
+import pageInsight from "astro-page-insight";
+import robots from "astro-robots";
+import metaTags from "astro-meta-tags";
+
+import sentry from "@sentry/astro";
+import spotlightjs from "@spotlightjs/astro";
 
 // https://astro.build/config
 export default defineConfig({
   output: "hybrid",
-  site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
-  base: config.site.base_path ? config.site.base_path : "/",
+  site: config.site.base_url,
+  base: config.site.base_path,
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   image: {
-    service: squooshImageService(),
+    service: squooshImageService()
   },
-  integrations: [
-    react(),
-    sitemap(),
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    AutoImport({
-      imports: [
-        "@/shortcodes/Button",
-        "@/shortcodes/Accordion",
-        "@/shortcodes/Notice",
-        "@/shortcodes/Video",
-        "@/shortcodes/Youtube",
-        "@/shortcodes/Tabs",
-        "@/shortcodes/Tab",
-      ],
-    }),
-    mdx(),
-  ],
+  integrations: [react(), sitemap(), tailwind({
+    config: {
+      applyBaseStyles: false
+    }
+  }), AutoImport({
+    imports: ["@/shortcodes/Button", "@/shortcodes/Accordion", "@/shortcodes/Notice", "@/shortcodes/Video", "@/shortcodes/Youtube", "@/shortcodes/Tabs", "@/shortcodes/Tab"]
+  }), mdx(), pageInsight(), robots(), metaTags(), sentry(), spotlightjs()],
   markdown: {
-    remarkPlugins: [
-      remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table of contents",
-        },
-      ],
-    ],
+    remarkPlugins: [remarkToc, [remarkCollapse, {
+      test: "Table of contents"
+    }]],
     shikiConfig: {
       theme: "one-dark-pro",
-      wrap: true,
+      wrap: true
     },
-    extendDefaultPlugins: true,
+    extendDefaultPlugins: true
   },
   i18n: {
     defaultLocale: "en",
-    locales: [
-      {
-        path: "de",
-        codes: ["de", "de-CH", "de-DE"],
-      },
-      {
-        path: "en",
-        codes: ["en", "en-GB", "en-US"],
-      },
-      {
-        path: "fr",
-        codes: ["fr", "fr-CH"],
-      },
-      {
-        path: "it",
-        codes: ["fr", "it-CH"],
-      },
-    ],
+    locales: [{
+      path: "de",
+      codes: ["de", "de-CH", "de-DE"]
+    }, {
+      path: "en",
+      codes: ["en", "en-GB", "en-US"]
+    }, {
+      path: "fr",
+      codes: ["fr", "fr-CH"]
+    }, {
+      path: "it",
+      codes: ["fr", "it-CH"]
+    }],
     routing: {
       prefixDefaultLocale: true,
       redirectToDefaultLocale: false,
-      strategy: "pathname",
-    },
+      strategy: "pathname"
+    }
   },
-  adapter: netlify({ edgeMiddleware: true }),
+  adapter: netlify({
+    edgeMiddleware: true
+  })
 });

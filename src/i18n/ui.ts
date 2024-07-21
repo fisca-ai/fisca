@@ -54,6 +54,7 @@ export const ui: Ui = {
     "Send Now": "Send Now",
     "Menu Open": "Menu Open",
     "Menu Close": "Menu Close",
+    FAQ: "FAQ",
   },
   fr: {
     Home: "Accueil",

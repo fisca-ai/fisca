@@ -23,9 +23,9 @@ const { images, width, height, swiper_class } = Astro.props as SwiperProps;
         <div class="swiper-wrapper">
           {images.map((image: string) => (
             <div class="swiper-slide">
-              <img
+              <Image
                 class={`lazyload fade-slide mx-auto h-auto ${swiper_class == SwiperClass.Integration && "grayscale"}`}
-                data-src={image}
+                src={images[0]}
                 width={width}
                 height={height}
                 alt=""
@@ -36,9 +36,9 @@ const { images, width, height, swiper_class } = Astro.props as SwiperProps;
         {swiper_class == SwiperClass.Service && <div class="pagination" />}
       </div>
     ) : (
-      <img
+      <Image
         class="lazyload fade-slide mx-auto rounded-lg "
-        data-src={images[0]}
+        src={images[0]}
         width={width}
         height={height}
         alt=""
@@ -114,26 +114,22 @@ const { images, width, height, swiper_class } = Astro.props as SwiperProps;
   let observer: IntersectionObserver | null;
   function initializeIntersectionObserver() {
     // Lazy load images when they come into view
-    observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const img = entry.target.querySelectorAll("img");
-            img.forEach((img) => {
-              if (img && !img.src) {
-                img.src = img.dataset.src as string;
-                img.onload = () => {
-                  img.classList.add("loaded");
-                };
-              }
-            });
-          }
-        });
-      },
-      {
-        threshold: 0.5, // Trigger when 50% of element is visible
-      }
-    );
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const img = entry.target.querySelectorAll("img");
+          img.forEach((img) => {
+            img.classList.add("loaded");
+            img.setAttribute("loading", "eager");
+          });
+        } else {
+          const img = entry.target.querySelectorAll("img");
+          img.forEach((img) => {
+            img.setAttribute("loading", "lazy");
+          });
+        }
+      });
+    });
 
     // Target the Swiper slides
     const swiperSlides = document.querySelectorAll(".swiper-container");
