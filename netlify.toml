@@ -10,3 +10,5 @@ X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
 Referrer-Policy = "same-origin"
 Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+# Explicitly allow indexing
+X-Robots-Tag = "index, follow"

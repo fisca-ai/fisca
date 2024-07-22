@@ -28,7 +28,6 @@ export interface Props {
   meta_title?: string;
   description?: string;
   image?: string;
-  noindex?: boolean;
 }
 
 // distructure frontmatters
@@ -43,7 +42,6 @@ const description =
   plainify(Astro.props.description ?? t(config.metadata.meta_description)) ??
   "";
 const image = Astro.props.image;
-const noindex = Astro.props.noindex;
 const canonical = `${config.site.base_url}${Astro.url.pathname}`;
 ---
 
@@ -95,12 +93,6 @@ const canonical = `${config.site.base_url}${Astro.url.pathname}`;
       title={meta_title}
       description={description}
       canonical={canonical}
-      noindex={noindex}
-      robotsProps={{
-        maxImagePreview: "large",
-        maxSnippet: -1,
-        maxVideoPreview: -1,
-      }}
       languageAlternates={[
         {
           href: "https://fisca.ai/de",
