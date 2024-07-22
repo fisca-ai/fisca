@@ -45,7 +45,7 @@ plans:
 call_to_action:
   title: Need a larger plan?
   content: The customer is very important, the customer will be followed by the customer. It is sad to be sad, but it is time to be happy..
-  image: "/images/cta.png"
+  image: "/images/cta.webp"
   button:
     enable: true
     label: "Contact Us"

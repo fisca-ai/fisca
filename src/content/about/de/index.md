@@ -11,10 +11,10 @@ task:
 
 founders:
   - name: Mitgründer 1
-    image: /images/image-placeholder.png
+    image: /images/image-placeholder.webp
     content: "[Mitgründer 1 Name] bringt über [Anzahl] Jahre Erfahrung in [Bereich oder Branche] mit. Bevor [Ihr Startup-Name] gegründet wurde, arbeitete [er/sie] bei [frühere bemerkenswerte Position oder Errungenschaft]. [Er/Sie] hat einen [Abschluss] in [Fachrichtung] von [Universität]. In seiner/ihrer Freizeit genießt [er/sie] [Hobby oder Interesse]."
   - name: Mitgründer 2
-    image: /images/image-placeholder.png
+    image: /images/image-placeholder.webp
     content: "[Mitgründer 2 Name] bringt über [Anzahl] Jahre Erfahrung in [Bereich oder Branche] mit. Bevor [Ihr Startup-Name] gegründet wurde, arbeitete [er/sie] bei [frühere bemerkenswerte Position oder Errungenschaft]. [Er/Sie] hat einen [Abschluss] in [Fachrichtung] von [Universität]. In seiner/ihrer Freizeit genießt [er/sie] [Hobby oder Interesse]."
 
 partner:

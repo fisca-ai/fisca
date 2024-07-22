@@ -37,7 +37,10 @@ const tp = useTranslatedPath(lang!);
 
 <Base lang={lang}>
   <!-- banner -->
-  <div class="section pb-[50px] bg-banner">
+  <section
+    class="section pb-[50px] bg-banner"
+    data-bg="/images/banner-background.webp"
+  >
     <div class="container">
       <div class="row flex flex-wrap lg:flex-nowrap items-center">
         <div class="lg:w-1/2 pr-4 lg:order-1">
@@ -205,7 +208,28 @@ const tp = useTranslatedPath(lang!);
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <script>
+    document.addEventListener("astro:page-load", function () {
+      const lazyLoad = (entries: any, observer: any) => {
+        entries.forEach((entry: any) => {
+          if (entry.isIntersecting) {
+            const bgImageUrl = entry.target.getAttribute("data-bg");
+            entry.target.style.backgroundImage = `url(${bgImageUrl})`;
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(lazyLoad, { threshold: 0.1 });
+
+      document.querySelectorAll(".bg-banner").forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
+  <!-- ./End banner -->
 
   <!-- Benefits -->
   <section class="section bg-theme-light">

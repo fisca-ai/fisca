@@ -11,10 +11,10 @@ task:
 
 founders:
   - name: Co-fondateur 1
-    image: /images/image-placeholder.png
+    image: /images/image-placeholder.webp
     content: "[Nom du Co-fondateur 1] apporte plus de [nombre] années d'expérience dans [domaine ou industrie]. Avant de fonder [Nom de Votre Startup], [il/elle] a travaillé chez [emploi ou réalisation notable précédente]. [Il/Elle] détient un [diplôme] en [domaine] de [université]. Pendant son temps libre, [il/elle] aime [loisir ou intérêt]."
   - name: Co-fondateur 2
-    image: /images/image-placeholder.png
+    image: /images/image-placeholder.webp
     content: "[Nom du Co-fondateur 2] apporte plus de [nombre] années d'expérience dans [domaine ou industrie]. Avant de fonder [Nom de Votre Startup], [il/elle] a travaillé chez [emploi ou réalisation notable précédente]. [Il/Elle] détient un [diplôme] en [domaine] de [université]. Pendant son temps libre, [il/elle] aime [loisir ou intérêt]."
 
 partner:

@@ -64,10 +64,10 @@ integration:
         - black: systèmes EHR, utilisés par les
         - black: Prestataires de Soins de Santé
   images:
-    - "/images/integration-01.png"
-    - "/images/integration-02.png"
-    - "/images/integration-03.png"
-    - "/images/integration-04.png"
+    - "/images/integration-01.webp"
+    - "/images/integration-02.webp"
+    - "/images/integration-03.webp"
+    - "/images/integration-04.webp"
 
 # services
 services:
@@ -78,7 +78,7 @@ services:
           - black: Codification Médicale
     content: "Notre Medical Coding Co-Pilot utilise l'IA pour automatiser le traitement des données et l'attribution des codes, réduisant ainsi considérablement la charge de travail manuelle. Avec le NLP, il interprète avec précision le langage médical complexe, minimisant les erreurs de codage sans changer votre flux de travail actuel."
     images:
-      - "/images/medical-coding.jpeg"
+      - "/images/medical-coding.webp"
     button:
       enable: true
       label: "En savoir plus"
@@ -90,7 +90,7 @@ services:
           - black: Facturation
     content: "Accurate Billing est une solution complète de gestion de la facturation et des paiements, conçue pour garantir des processus de facturation précis et en temps opportun. Elle offre des fonctionnalités telles que la génération automatique de factures, la détection des erreurs et des rapports détaillés pour améliorer la précision financière et l'efficacité des entreprises."
     images:
-      - "/images/accurate-billing.jpeg"
+      - "/images/accurate-billing.webp"
     button:
       enable: true
       label: "En savoir plus"
@@ -102,7 +102,7 @@ services:
           - black: Réclamations & Re-Réclamations
     content: "Claim Management est un système robuste conçu pour rationaliser le processus de dépôt, de suivi et de résolution des réclamations d'assurance. Il offre des fonctionnalités telles que le traitement automatisé des réclamations, les mises à jour de statut en temps réel et des rapports complets pour garantir une gestion efficace et transparente des réclamations pour les assureurs et les assurés. Grâce à l'IA, nous pouvons répondre automatiquement à certaines des requêtes des compagnies d'assurance."
     images:
-      - "/images/claim-management_fr.png"
+      - "/images/claim-management_fr.webp"
     button:
       enable: true
       label: "En savoir plus"
@@ -114,7 +114,7 @@ services:
           - black: Analyses & Perspectives
     content: "Analytics & Insights est un ensemble d'outils spécialisés visant à améliorer l'efficacité et la précision du processus de facturation médicale. Il offre des fonctionnalités telles que des rapports financiers détaillés, des analyses de tendances et une modélisation prédictive pour aider les prestataires de soins de santé à optimiser les cycles de revenus, à réduire les erreurs de facturation et à améliorer les résultats des patients grâce à une prise de décision basée sur les données."
     images:
-      - "/images/analytics-insights.jpeg"
+      - "/images/analytics-insights.webp"
     button:
       enable: true
       label: "En savoir plus"
@@ -152,9 +152,9 @@ feature:
 # app
 app:
   title: "Comprenez vos factures"
-  apple: /images/apple.png
+  apple: /images/apple.webp
   apple_link: "#"
-  google: /images/google.png
+  google: /images/google.webp
   google_link: "#"
 
 # testimony
@@ -163,23 +163,23 @@ testimony:
   testimonies:
     - title: "Dr A"
       subtitle: "Hôpital A"
-      image: "/images/testimony1.jpg"
+      image: "/images/testimony1.webp"
       content: "Lorem ipsum est un texte de substitution couramment utilisé dans l'industrie graphique, l'impression et l'édition pour prévisualiser les mises en page et les maquettes visuelles."
     - title: "Dr B"
       subtitle: "Hôpital B"
-      image: "/images/testimony1.jpg"
+      image: "/images/testimony1.webp"
       content: "Lorem ipsum est un texte de substitution couramment utilisé dans l'industrie graphique, l'impression et l'édition pour prévisualiser les mises en page et les maquettes visuelles."
     - title:
         - title: "Dr C"
       subtitle: "Hôpital C"
-      image: "/images/testimony1.jpg"
+      image: "/images/testimony1.webp"
       content: "Lorem ipsum est un texte de substitution couramment utilisé dans l'industrie graphique, l'impression et l'édition pour prévisualiser les mises en page et les maquettes visuelles."
 
 # call_to_action
 call_to_action:
   title: "Prêt à commencer ?"
   content: "Cliquez ci-dessous et contactez-nous."
-  image: "/images/cta.png"
+  image: "/images/cta.webp"
   button:
     enable: true
     label: "Contactez-nous"

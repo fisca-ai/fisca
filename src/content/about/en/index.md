@@ -10,10 +10,10 @@ task:
   content: At Fisca AI, we specialize in applying AI to solve medical billing problems, saving time and allowing doctors to focus on patients instead of billing. Our goal is to improve accuracy and effort when creating, validating or understanding medical bills. We are committed to...
 founders:
   - name: co-founder 1
-    image: /images/image-placeholder.png
+    image: /images/image-placeholder.webp
     content: "[Co-Founder 1 Name] brings over [number] years of experience in [field or industry]. Before founding [Your Startup Name], [he/she/they] worked at [previous notable job or achievement]. [He/She/They] holds a [degree] in [field] from [university]. In [his/her/their] free time, [he/she/they] enjoys [hobby or interest]."
   - name: co-founder 2
-    image: /images/image-placeholder.png
+    image: /images/image-placeholder.webp
     content: "[Co-Founder 2 Name] brings over [number] years of experience in [field or industry]. Before founding [Your Startup Name], [he/she/they] worked at [previous notable job or achievement]. [He/She/They] holds a [degree] in [field] from [university]. In [his/her/their] free time, [he/she/they] enjoys [hobby or interest]."
 partner:
   title: Partner With Us

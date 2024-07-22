@@ -64,10 +64,10 @@ integration:
         - black: EHR, utilizzati da
         - black: Fornitori di Assistenza Sanitaria
   images:
-    - "/images/integration-01.png"
-    - "/images/integration-02.png"
-    - "/images/integration-03.png"
-    - "/images/integration-04.png"
+    - "/images/integration-01.webp"
+    - "/images/integration-02.webp"
+    - "/images/integration-03.webp"
+    - "/images/integration-04.webp"
 
 # services
 services:
@@ -78,7 +78,7 @@ services:
           - black: Codifica Medica
     content: "Il nostro Medical Coding Co-Pilot sfrutta l'IA per automatizzare l'elaborazione dei dati e l'assegnazione dei codici, riducendo significativamente il carico di lavoro manuale. Con il NLP, interpreta accuratamente il linguaggio medico complesso, minimizzando gli errori di codifica senza cambiare il tuo flusso di lavoro attuale."
     images:
-      - "/images/medical-coding.jpeg"
+      - "/images/medical-coding.webp"
     button:
       enable: true
       label: "Scopri di più"
@@ -91,7 +91,7 @@ services:
           - black: Fatturazione
     content: "Accurate Billing è una soluzione completa per la gestione della fatturazione e dei pagamenti progettata per garantire processi di fatturazione precisi e tempestivi. Offre funzionalità come la generazione automatica delle fatture, la rilevazione degli errori e report dettagliati per migliorare la precisione finanziaria e l'efficienza delle aziende."
     images:
-      - "/images/accurate-billing.jpeg"
+      - "/images/accurate-billing.webp"
     button:
       enable: true
       label: "Scopri di più"
@@ -104,7 +104,7 @@ services:
           - black: Richieste & Ri-Richieste
     content: "Claim Management è un sistema robusto progettato per semplificare il processo di presentazione, tracciamento e risoluzione delle richieste di risarcimento assicurativo. Offre funzionalità come l'elaborazione automatica delle richieste, aggiornamenti di stato in tempo reale e report completi per garantire una gestione efficiente e trasparente delle richieste per assicuratori e assicurati. Utilizzando l'IA possiamo rispondere automaticamente ad alcune delle richieste delle compagnie assicurative."
     images:
-      - "/images/claim-management_it.png"
+      - "/images/claim-management_it.webp"
     button:
       enable: true
       label: "Scopri di più"
@@ -116,7 +116,7 @@ services:
           - black: Analisi & Approfondimenti
     content: "Analytics & Insights è un insieme di strumenti specializzati mirati a migliorare l'efficienza e la precisione del processo di fatturazione medica. Offre funzionalità come report finanziari dettagliati, analisi delle tendenze e modellazione predittiva per aiutare i fornitori di assistenza sanitaria a ottimizzare i cicli di entrate, ridurre gli errori di fatturazione e migliorare i risultati dei pazienti attraverso decisioni basate sui dati."
     images:
-      - "/images/analytics-insights.jpeg"
+      - "/images/analytics-insights.webp"
     button:
       enable: true
       label: "Scopri di più"
@@ -154,9 +154,9 @@ feature:
 # app
 app:
   title: "Comprendi le tue fatture"
-  apple: /images/apple.png
+  apple: /images/apple.webp
   apple_link: "#"
-  google: /images/google.png
+  google: /images/google.webp
   google_link: "#"
 
 # testimony
@@ -165,22 +165,22 @@ testimony:
   testimonies:
     - title: "Dr A"
       subtitle: "Ospedale A"
-      image: "/images/testimony1.jpg"
+      image: "/images/testimony1.webp"
       content: "Lorem ipsum è un testo fittizio utilizzato comunemente nelle industrie grafiche, di stampa e di pubblicazione per visualizzare in anteprima layout e mockup visivi."
     - title: "Dr B"
       subtitle: "Ospedale B"
-      image: "/images/testimony1.jpg"
+      image: "/images/testimony1.webp"
       content: "Lorem ipsum è un testo fittizio utilizzato comunemente nelle industrie grafiche, di stampa e di pubblicazione per visualizzare in anteprima layout e mockup visivi."
     - title: "Dr C"
       subtitle: "Ospedale C"
-      image: "/images/testimony1.jpg"
+      image: "/images/testimony1.webp"
       content: "Lorem ipsum è un testo fittizio utilizzato comunemente nelle industrie grafiche, di stampa e di pubblicazione per visualizzare in anteprima layout e mockup visivi."
 
 # call_to_action
 call_to_action:
   title: "Pronto per iniziare?"
   content: "Clicca sotto e contattaci."
-  image: "/images/cta.png"
+  image: "/images/cta.webp"
   button:
     enable: true
     label: "Contattaci"

@@ -66,10 +66,10 @@ integration:
         # - teal: many
         - black: Healthcare providers
   images:
-    - "/images/integration-01.png"
-    - "/images/integration-02.png"
-    - "/images/integration-03.png"
-    - "/images/integration-04.png"
+    - "/images/integration-01.webp"
+    - "/images/integration-02.webp"
+    - "/images/integration-03.webp"
+    - "/images/integration-04.webp"
 
 # services
 services:
@@ -80,7 +80,7 @@ services:
           - black: Medical Coding
     content: "Our Medical Coding Co-Pilot leverages AI to automate data processing and code assignment, significantly reducing manual workload. With NLP, it accurately interprets complex medical language, minimizing coding errors without changing your current workflow."
     images:
-      - "/images/medical-coding.jpeg"
+      - "/images/medical-coding.webp"
     button:
       enable: true
       label: Learn more about it
@@ -92,7 +92,7 @@ services:
           - black: Billing
     content: "Accurate Billing is a comprehensive invoicing and payment management solution designed to ensure precise and timely billing processes. It offers features such as automated invoice generation, error detection, and detailed reporting to enhance financial accuracy and efficiency for businesses."
     images:
-      - "/images/accurate-billing.jpeg"
+      - "/images/accurate-billing.webp"
     button:
       enable: true
       label: Learn more about it
@@ -105,7 +105,7 @@ services:
           - black: Claims & Re-Claims
     content: "Claim Management is a robust system designed to streamwords the process of filing, tracking, and resolving insurance claims. It offers features like automated claim processing, real-time status updates, and comprehensive reporting to ensure efficient and transparent handling of claims for both insurers and policyholders. Using AI we can automatically respond to some of the queries insurance companies have."
     images:
-      - "/images/claim-management_en.png"
+      - "/images/claim-management_en.webp"
     button:
       enable: true
       label: Learn more about it
@@ -118,7 +118,7 @@ services:
           - black: Analytics & insights
     content: "Analytics & Insights is a specialized toolset aimed at enhancing the efficiency and accuracy of the medical billing process. It provides features like detailed financial reporting, trend analysis, and predictive modeling to help healthcare providers optimize revenue cycles, reduce billing errors, and improve patient care outcomes through data-driven decision-making."
     images:
-      - "/images/analytics-insights.jpeg"
+      - "/images/analytics-insights.webp"
     button:
       enable: true
       label: Learn more about it
@@ -162,9 +162,9 @@ feature:
 # app
 app:
   title: "Understand your bills"
-  apple: /images/apple.png
+  apple: /images/apple.webp
   apple_link: "#"
-  google: /images/google.png
+  google: /images/google.webp
   google_link: "#"
 
 # testimony
@@ -173,15 +173,15 @@ testimony:
   testimonies:
     - title: "Dr A"
       subtitle: "Hospital A"
-      image: "/images/testimony1.jpg"
+      image: "/images/testimony1.webp"
       content: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
     - title: "Dr B"
       subtitle: "Hospital B"
-      image: "/images/testimony1.jpg"
+      image: "/images/testimony1.webp"
       content: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
     - title: "Dr C"
       subtitle: "Hospital C"
-      image: "/images/testimony1.jpg"
+      image: "/images/testimony1.webp"
       content: "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
 
 # call_to_action

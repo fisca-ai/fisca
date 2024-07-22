@@ -4,9 +4,9 @@
     "base_url": "https://fisca.ai/",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo_green.png",
-    "logo_green": "/images/logo_green.png",
+    "favicon": "/images/favicon.webp",
+    "logo": "/images/logo_green.webp",
+    "logo_green": "/images/logo_green.webp",
     "logo_width": "100",
     "logo_height": "60",
     "logo_text": "Astroplate"
@@ -33,7 +33,7 @@
 
   "metadata": {
     "meta_author": "Fisca",
-    "meta_image": "/images/logo.png",
+    "meta_image": "/images/logo.webp",
     "meta_description": "Fisca website"
   }
 }

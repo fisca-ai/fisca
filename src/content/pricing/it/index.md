@@ -45,7 +45,7 @@ plans:
 call_to_action:
   title: Hai bisogno di un piano più grande?
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
-  image: "/images/cta.png"
+  image: "/images/cta.webp"
   button:
     enable: true
     label: "Contattaci"
