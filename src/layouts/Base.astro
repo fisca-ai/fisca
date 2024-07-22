@@ -29,7 +29,6 @@ export interface Props {
   description?: string;
   image?: string;
   noindex?: boolean;
-  canonical?: string;
 }
 
 // distructure frontmatters
@@ -45,7 +44,7 @@ const description =
   "";
 const image = Astro.props.image;
 const noindex = Astro.props.noindex;
-const canonical = Astro.props.canonical ?? "/";
+const canonical = `${config.site.base_url}${Astro.url.pathname}`;
 ---
 
 <!doctype html>
@@ -95,7 +94,7 @@ const canonical = Astro.props.canonical ?? "/";
     <SEO
       title={meta_title}
       description={description}
-      canonical={tp(canonical ?? "/")}
+      canonical={canonical}
       noindex={noindex}
       languageAlternates={[
         {
