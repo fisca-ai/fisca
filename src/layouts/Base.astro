@@ -9,7 +9,7 @@ import "@/styles/main.scss";
 import { AstroFont } from "astro-font";
 import { ViewTransitions } from "astro:transitions";
 import { useTranslations, useTranslatedPath } from "@/i18n/utils";
-import { SEO } from "astro-seo";
+import { AstroSeo } from "@astrolib/seo";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -91,11 +91,16 @@ const canonical = `${config.site.base_url}${Astro.url.pathname}`;
     />
 
     <!-- title, description, canonical, noindex robots, author from config.json, OG and Twitter tags using Astro SEO -->
-    <SEO
+    <AstroSeo
       title={meta_title}
       description={description}
       canonical={canonical}
       noindex={noindex}
+      robotsProps={{
+        maxImagePreview: "large",
+        maxSnippet: -1,
+        maxVideoPreview: -1,
+      }}
       languageAlternates={[
         {
           href: "https://fisca.ai/de",
@@ -115,21 +120,19 @@ const canonical = `${config.site.base_url}${Astro.url.pathname}`;
         },
       ]}
       openGraph={{
-        basic: {
-          title: meta_title,
-          type: "website",
-          image: `${config.site.base_url}${image ? image : config.metadata.meta_image}`,
-          url: `${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`,
-        },
-        optional: {
-          description: description,
-        },
+        title: meta_title,
+        type: "website",
+        images: [
+          {
+            url: `${config.site.base_url}${image ?? config.metadata.meta_image}`,
+          },
+        ],
+        url: `${config.site.base_url}${tp(Astro.url.pathname)}`,
+        description: description,
+        site_name: meta_title,
       }}
       twitter={{
-        card: "summary_large_image",
-        title: meta_title,
-        description: description,
-        image: `${config.site.base_url}${image ? image : config.metadata.meta_image}`,
+        cardType: "summary_large_image",
       }}
     />
 

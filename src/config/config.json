@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "Fisca",
+    "title": "fisca_title",
     "base_url": "https://fisca.ai",
     "base_path": "/",
     "trailing_slash": false,
@@ -34,6 +34,6 @@
   "metadata": {
     "meta_author": "Fisca",
     "meta_image": "/images/logo_green.webp",
-    "meta_description": "meta_description"
+    "meta_description": "fisca_description"
   }
 }
