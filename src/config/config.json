@@ -28,12 +28,12 @@
     "contact_form_action": "",
     "tag_manager_id": "",
     "footer_content": "",
-    "copyright": "&copy; 2024. Fisca. All rights reserved."
+    "copyright": "copyright"
   },
 
   "metadata": {
     "meta_author": "Fisca",
     "meta_image": "/images/logo.webp",
-    "meta_description": "Fisca website"
+    "meta_description": "meta_description"
   }
 }

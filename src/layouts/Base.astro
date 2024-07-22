@@ -8,7 +8,8 @@ import Header from "@/partials/Header.astro";
 import "@/styles/main.scss";
 import { AstroFont } from "astro-font";
 import { ViewTransitions } from "astro:transitions";
-import { useTranslatedPath } from "@/i18n/utils";
+import { useTranslations, useTranslatedPath } from "@/i18n/utils";
+import { SEO } from "astro-seo";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -32,10 +33,19 @@ export interface Props {
 }
 
 // distructure frontmatters
-const { lang, title, meta_title, description, image, noindex, canonical } =
-  Astro.props;
-
+const lang = Astro.props.lang;
+const t = useTranslations(lang!);
 const tp = useTranslatedPath(lang!);
+
+const title = Astro.props.title;
+const meta_title =
+  plainify(Astro.props.meta_title ?? title ?? t(config.site.title)) ?? "";
+const description =
+  plainify(Astro.props.description ?? t(config.metadata.meta_description)) ??
+  "";
+const image = Astro.props.image;
+const noindex = Astro.props.noindex;
+const canonical = Astro.props.canonical ?? "/";
 ---
 
 <!doctype html>
@@ -43,6 +53,7 @@ const tp = useTranslatedPath(lang!);
   <head>
     <!-- favicon -->
     <link rel="shortcut icon" href={config.site.favicon} />
+
     <!-- theme meta -->
     <meta name="theme-name" content="bigspring-light-astro" />
     <meta name="msapplication-TileColor" content="#000000" />
@@ -80,84 +91,52 @@ const tp = useTranslatedPath(lang!);
       content="width=device-width, initial-scale=1, maximum-scale=5"
     />
 
-    <!-- title -->
-    <title>
-      {plainify(meta_title ? meta_title : title ? title : config.site.title)}
-    </title>
-
-    <!-- canonical url -->
-    {canonical && <link rel="canonical" href={tp(canonical)} item-prop="url" />}
-
-    <!-- noindex robots -->
-    {noindex && <meta name="robots" content="noindex,nofollow" />}
-
-    <!-- meta-description -->
-    <meta
-      name="description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
+    <!-- title, description, canonical, noindex robots, author from config.json, OG and Twitter tags using Astro SEO -->
+    <SEO
+      title={meta_title}
+      description={description}
+      canonical={tp(canonical ?? "/")}
+      noindex={noindex}
+      languageAlternates={[
+        {
+          href: "https://fisca.ai/de",
+          hrefLang: "de",
+        },
+        {
+          href: "https://fisca.ai/en",
+          hrefLang: "en",
+        },
+        {
+          href: "https://fisca.ai/fr",
+          hrefLang: "fr",
+        },
+        {
+          href: "https://fisca.ai/it",
+          hrefLang: "it",
+        },
+      ]}
+      openGraph={{
+        basic: {
+          title: meta_title,
+          type: "website",
+          image: `${config.site.base_url}${image ? image : config.metadata.meta_image}`,
+          url: `${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`,
+        },
+        optional: {
+          description: description,
+        },
+      }}
+      twitter={{
+        card: "summary_large_image",
+        title: meta_title,
+        description: description,
+        image: `${config.site.base_url}${image ? image : config.metadata.meta_image}`,
+      }}
     />
 
     <ViewTransitions />
-
-    <!-- author from config.json -->
-    <meta name="author" content={config.metadata.meta_author} />
-
-    <!-- og-title -->
-    <meta
-      property="og:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
-    />
-
-    <!-- og-description -->
-    <meta
-      property="og:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
-    />
-
-    <!-- twitter-title -->
-    <meta
-      name="twitter:title"
-      content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title
-      )}
-    />
-
-    <!-- twitter-description -->
-    <meta
-      name="twitter:description"
-      content={plainify(
-        description ? description : config.metadata.meta_description
-      )}
-    />
-
-    <!-- og-image -->
-    <meta
-      property="og:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
-
-    <!-- twitter-image -->
-    <meta
-      name="twitter:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
-    <meta name="twitter:card" content="summary_large_image" />
   </head>
+
   <body>
     <TwSizeIndicator />
     <Header lang={lang} />
