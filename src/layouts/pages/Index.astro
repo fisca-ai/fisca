@@ -327,16 +327,12 @@ const tp = useTranslatedPath(lang!);
       );
 
       // Start observing the element
-      if (animateElementLeft) {
-        Array.from(animateElementLeft).forEach((element) =>
-          observer.observe(element)
-        );
-      }
-      if (animateElementRight) {
-        Array.from(animateElementRight).forEach((element) =>
-          observer.observe(element)
-        );
-      }
+      Array.from(animateElementLeft).forEach((element) =>
+        observer.observe(element)
+      );
+      Array.from(animateElementRight).forEach((element) =>
+        observer.observe(element)
+      );
     }
 
     function removeExistingObserver() {
@@ -471,7 +467,7 @@ const tp = useTranslatedPath(lang!);
       </div>
     </div> -->
   </section>
-  <script>
+  <script is:inline>
     import { Swiper } from "swiper";
     import "swiper/css";
     import "swiper/css/pagination";
