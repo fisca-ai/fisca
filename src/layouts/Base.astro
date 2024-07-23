@@ -10,7 +10,6 @@ import { AstroFont } from "astro-font";
 import { ViewTransitions } from "astro:transitions";
 import { useTranslations, useTranslatedPath } from "@/i18n/utils";
 import { SEO } from "astro-seo";
-import { GoogleAnalytics } from "astro-analytics";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -51,7 +50,6 @@ const type = Astro.props.type ?? "website";
 <!doctype html>
 <html lang={lang}>
   <head>
-    <GoogleAnalytics id="G-VM2KF8K82V" />
     <!-- favicon -->
     <link rel="shortcut icon" href={config.site.favicon} />
 
