@@ -35,9 +35,9 @@ export const ui: Ui = {
     "Menu Close": "Menu Close",
     FAQ: "FAQ",
     copyright: "© 2022. Fisca. All rights reserved",
-    fisca_title: "Fisca - AI Medical Coding and Billing Platform",
+    fisca_title: "Fisca - AI billing and  medical coding platform",
     fisca_description:
-      "Empowering healthcare providers with AI-driven diagnostic coding, billing, claim management, and analytics for advanced revenue management and insightful claims processing for a brighter future.",
+      "Empowering healthcare providers with AI-powered diagnostic coding and billing for the future of revenue and claims management.",
   },
   de: {
     Home: "Startseite",
@@ -60,9 +60,9 @@ export const ui: Ui = {
     "Menu Open": "Menu öffnen",
     "Menu Close": "Menu schließen",
     copyright: "© 2022. Fisca. Alle Rechte vorbehalten",
-    fisca_title: "Fisca - KI Medizinische Kodierungs- und Abrechnungsplattform",
+    fisca_title: "Fisca - AI Rechnungen und Medizinische Kodierung",
     fisca_description:
-      "Stärkung der Gesundheitsdienstleister durch KI-gestützte diagnostische Kodierung, Abrechnung, Anspruchsmanagement sowie Analysen und Erkenntnisse für eine fortschrittliche Einnahmenverwaltung und optimierte Anspruchsverarbeitung.",
+      "Gesundheitsdienstleister mit KI-gesteuertem Diagnosescoding und Abrechnung für die Zukunft des Umsatz- und Forderungsmanagements stärken.",
   },
   fr: {
     Home: "Accueil",
@@ -85,10 +85,9 @@ export const ui: Ui = {
     "Menu Open": "Menu ouvert",
     "Menu Close": "Menu ferme",
     copyright: "© 2022. Fisca. Tous droits réservés",
-    fisca_title:
-      "Fisca - Plateforme de codage et de facturation médicale alimentée par l'IA",
+    fisca_title: "Fisca - Plateforme de facturation et de codage médical",
     fisca_description:
-      "Renforcement des prestataires de soins de santé grâce à la codification diagnostique et à la facturation alimentées par l'IA, ainsi qu'à la gestion des demandes, l'analyse et les informations pour une gestion des revenus et un traitement des demandes plus avancés.",
+      "Renforcer les prestataires de soins de santé avec le codage et la facturation diagnostiques alimentés par l'IA pour l'avenir de la gestion des revenus et des réclamations.",
   },
   it: {
     Home: "Home",
@@ -111,10 +110,9 @@ export const ui: Ui = {
     "Menu Open": "Menu aperto",
     "Menu Close": "Menu chiuso",
     copyright: "© 2022. Fisca. Tutti i diritti riservati",
-    fisca_title:
-      "Fisca - Piattaforma di codifica e fatturazione medica basata su IA",
+    fisca_title: "Fisca - Piattaforma di fatturazione e codifica medica",
     fisca_description:
-      "Potenziare i fornitori di assistenza sanitaria con codifica diagnostica e fatturazione basate su IA, gestione delle richieste, analisi e intuizioni per una gestione dei ricavi e una gestione delle richieste più avanzate.",
+      "Potenziare i fornitori di servizi sanitari con la codifica e la fatturazione diagnostica basate su IA per il futuro della gestione dei ricavi e delle richieste.",
   },
 } as const;
 
