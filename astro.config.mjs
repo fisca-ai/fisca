@@ -11,7 +11,6 @@ import netlify from "@astrojs/netlify";
 import pageInsight from "astro-page-insight";
 import robots from "astro-robots";
 import metaTags from "astro-meta-tags";
-import playformInline from "@playform/inline";
 
 // https://astro.build/config
 export default defineConfig({
@@ -28,7 +27,7 @@ export default defineConfig({
     }
   }), AutoImport({
     imports: ["@/shortcodes/Button", "@/shortcodes/Accordion", "@/shortcodes/Notice", "@/shortcodes/Video", "@/shortcodes/Youtube", "@/shortcodes/Tabs", "@/shortcodes/Tab"]
-  }), mdx(), pageInsight(), robots(), metaTags(), playformInline()],
+  }), mdx(), pageInsight(), robots(), metaTags()],
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, {
       test: "Table of contents"
