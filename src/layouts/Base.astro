@@ -50,6 +50,18 @@ const type = Astro.props.type ?? "website";
 <!doctype html>
 <html lang={lang}>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VM2KF8K82V"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VM2KF8K82V");
+    </script>
     <!-- favicon -->
     <link rel="shortcut icon" href={config.site.favicon} />
 
