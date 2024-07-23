@@ -14,7 +14,6 @@
     "@astrojs/db": "^0.11.7",
     "@astrojs/mdx": "^2.3.1",
     "@astrojs/netlify": "^5.3.2",
-    "@astrojs/partytown": "^2.1.1",
     "@astrojs/react": "^3.3.2",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.6",
@@ -22,7 +21,6 @@
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^5.16.4",
-    "@playform/inline": "^0.0.7",
     "astro": "^4.7.1",
     "astro-analytics": "^2.7.0",
     "astro-auto-import": "^0.4.2",
@@ -45,7 +43,6 @@
     "remark-toc": "^9.0.0",
     "sharp": "0.33.1",
     "swiper": "^11.1.5",
-    "swup": "^4.7.0",
     "text-to-svg": "^3.1.5",
     "typescript": "^5.5.2"
   },
