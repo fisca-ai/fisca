@@ -38,7 +38,7 @@ const tp = useTranslatedPath(lang!);
 <Base lang={lang}>
   <!-- banner -->
   <section
-    class="section pb-[50px] bg-banner"
+    class="section pb-[50px] bg-banner fade-slide"
     data-bg="/images/banner-background.webp"
   >
     <div class="container">
@@ -216,6 +216,7 @@ const tp = useTranslatedPath(lang!);
           if (entry.isIntersecting) {
             const bgImageUrl = entry.target.getAttribute("data-bg");
             entry.target.style.backgroundImage = `url(${bgImageUrl})`;
+            entry.target.classList.add("loaded");
             observer.unobserve(entry.target);
           }
         });
