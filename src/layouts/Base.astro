@@ -9,7 +9,7 @@ import "@/styles/main.scss";
 import { AstroFont } from "astro-font";
 import { ViewTransitions } from "astro:transitions";
 import { useTranslations, useTranslatedPath } from "@/i18n/utils";
-import { AstroSeo } from "@astrolib/seo";
+import { SEO } from "astro-seo";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -28,6 +28,7 @@ export interface Props {
   meta_title?: string;
   description?: string;
   image?: string;
+  type?: string;
 }
 
 // distructure frontmatters
@@ -43,6 +44,7 @@ const description =
   "";
 const image = Astro.props.image;
 const canonical = `${config.site.base_url}${Astro.url.pathname}`;
+const type = Astro.props.type ?? "website";
 ---
 
 <!doctype html>
@@ -89,7 +91,7 @@ const canonical = `${config.site.base_url}${Astro.url.pathname}`;
     />
 
     <!-- title, description, canonical, noindex robots, author from config.json, OG and Twitter tags using Astro SEO -->
-    <AstroSeo
+    <SEO
       title={meta_title}
       description={description}
       canonical={canonical}
@@ -112,19 +114,21 @@ const canonical = `${config.site.base_url}${Astro.url.pathname}`;
         },
       ]}
       openGraph={{
-        title: meta_title,
-        type: "website",
-        images: [
-          {
-            url: `${config.site.base_url}${image ?? config.metadata.meta_image}`,
-          },
-        ],
-        url: `${config.site.base_url}${tp(Astro.url.pathname)}`,
-        description: description,
-        site_name: meta_title,
+        basic: {
+          title: meta_title,
+          type: type,
+          image: `${config.site.base_url}${image ? image : config.metadata.meta_image}`,
+          url: `${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`,
+        },
+        optional: {
+          description: description,
+        },
       }}
       twitter={{
-        cardType: "summary_large_image",
+        card: "summary_large_image",
+        title: meta_title,
+        description: description,
+        image: `${config.site.base_url}${image ? image : config.metadata.meta_image}`,
       }}
     />
 
