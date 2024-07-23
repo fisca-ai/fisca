@@ -209,10 +209,10 @@ const tp = useTranslatedPath(lang!);
       </div>
     </div>
   </section>
-  <script is:inline>
+  <script>
     document.addEventListener("astro:page-load", function () {
-      const lazyLoad = (entries, observer) => {
-        entries.forEach((entry) => {
+      const lazyLoad = (entries: any, observer: any) => {
+        entries.forEach((entry: any) => {
           if (entry.isIntersecting) {
             const bgImageUrl = entry.target.getAttribute("data-bg");
             entry.target.style.backgroundImage = `url(${bgImageUrl})`;
@@ -296,8 +296,8 @@ const tp = useTranslatedPath(lang!);
     })
   }
 
-  <script is:inline>
-    let observer;
+  <script>
+    let observer: IntersectionObserver | null;
     function initializeIntersectionObserver() {
       // JavaScript to observe element visibility and trigger animation
       observer = new IntersectionObserver(
@@ -321,17 +321,16 @@ const tp = useTranslatedPath(lang!);
 
       // Target the element to observe
       const animateElementLeft =
-        document.getElementsByClassName("animateElementLeft");
-      const animateElementRight = document.getElementsByClassName(
-        "animateElementRight"
-      );
+        document.getElementsByClassName("animateElementLeft") ?? [];
+      const animateElementRight =
+        document.getElementsByClassName("animateElementRight") ?? [];
 
       // Start observing the element
       Array.from(animateElementLeft).forEach((element) =>
-        observer.observe(element)
+        observer!.observe(element)
       );
       Array.from(animateElementRight).forEach((element) =>
-        observer.observe(element)
+        observer!.observe(element)
       );
     }
 
@@ -467,7 +466,7 @@ const tp = useTranslatedPath(lang!);
       </div>
     </div> -->
   </section>
-  <script is:inline>
+  <script>
     import { Swiper } from "swiper";
     import "swiper/css";
     import "swiper/css/pagination";
