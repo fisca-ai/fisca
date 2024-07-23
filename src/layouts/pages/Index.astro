@@ -211,21 +211,10 @@ const tp = useTranslatedPath(lang!);
   </section>
   <script>
     document.addEventListener("astro:page-load", function () {
-      const lazyLoad = (entries: any, observer: any) => {
-        entries.forEach((entry: any) => {
-          if (entry.isIntersecting) {
-            const bgImageUrl = entry.target.getAttribute("data-bg");
-            entry.target.style.backgroundImage = `url(${bgImageUrl})`;
-            entry.target.classList.add("loaded");
-            observer.unobserve(entry.target);
-          }
-        });
-      };
-
-      const observer = new IntersectionObserver(lazyLoad, { threshold: 0.1 });
-
-      document.querySelectorAll(".bg-banner").forEach((el) => {
-        observer.observe(el);
+      document.querySelectorAll(".bg-banner").forEach((entry: any) => {
+        const bgImageUrl = entry.getAttribute("data-bg");
+        entry.style.backgroundImage = `url(${bgImageUrl})`;
+        entry.classList.add("loaded");
       });
     });
   </script>
