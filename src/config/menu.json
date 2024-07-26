@@ -1,10 +1,6 @@
 {
   "main": [
     {
-      "name": "Pricing",
-      "url": "/pricing"
-    },
-    {
       "name": "About Us",
       "url": "/about"
     },
@@ -24,25 +20,8 @@
       ]
     },
     {
-      "name": "Products",
-      "menu": [
-        {
-          "text": "AI Billing",
-          "url": "/"
-        },
-        {
-          "text": "Pricing",
-          "url": "/pricing"
-        }
-      ]
-    },
-    {
       "name": "Support",
       "menu": [
-        {
-          "text": "FAQ",
-          "url": "/faq"
-        },
         {
           "text": "Privacy Policy",
           "url": "/privacy-policy"

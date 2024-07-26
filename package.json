@@ -1,8 +1,8 @@
 {
-  "name": "bigspring-light-astro",
+  "name": "fisca-landing",
   "version": "2.0.0",
-  "description": "astro personal blog theme",
-  "author": "themefisher",
+  "description": "Fisca Website",
+  "author": "fisca",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",

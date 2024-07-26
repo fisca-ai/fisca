@@ -99,6 +99,7 @@ services:
   - title:
       - words:
           - teal: Sophistiqué
+      - words:
           - black: Réclamations & Re-Réclamations
     content: "Claim Management est un système robuste conçu pour rationaliser le processus de dépôt, de suivi et de résolution des réclamations d'assurance. Il offre des fonctionnalités telles que le traitement automatisé des réclamations, les mises à jour de statut en temps réel et des rapports complets pour garantir une gestion efficace et transparente des réclamations pour les assureurs et les assurés. Grâce à l'IA, nous pouvons répondre automatiquement à certaines des requêtes des compagnies d'assurance."
     images:
@@ -111,6 +112,7 @@ services:
   - title:
       - words:
           - teal: Complet
+      - words:
           - black: Analyses & Perspectives
     content: "Analytics & Insights est un ensemble d'outils spécialisés visant à améliorer l'efficacité et la précision du processus de facturation médicale. Il offre des fonctionnalités telles que des rapports financiers détaillés, des analyses de tendances et une modélisation prédictive pour aider les prestataires de soins de santé à optimiser les cycles de revenus, à réduire les erreurs de facturation et à améliorer les résultats des patients grâce à une prise de décision basée sur les données."
     images:

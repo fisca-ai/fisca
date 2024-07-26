@@ -212,8 +212,7 @@ const tp = useTranslatedPath(lang!);
   <script>
     document.addEventListener("astro:page-load", function () {
       document.querySelectorAll(".bg-banner").forEach((entry: any) => {
-        const bgImageUrl = entry.getAttribute("data-bg");
-        entry.style.backgroundImage = `url(${bgImageUrl})`;
+        entry.style.backgroundImage = `url(${entry.getAttribute("data-bg")})`;
         entry.classList.add("loaded");
       });
     });

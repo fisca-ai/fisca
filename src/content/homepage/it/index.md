@@ -87,7 +87,6 @@ services:
   - title:
       - words:
           - teal: Precisa
-      - words:
           - black: Fatturazione
     content: "Accurate Billing è una soluzione completa per la gestione della fatturazione e dei pagamenti progettata per garantire processi di fatturazione precisi e tempestivi. Offre funzionalità come la generazione automatica delle fatture, la rilevazione degli errori e report dettagliati per migliorare la precisione finanziaria e l'efficienza delle aziende."
     images:
@@ -101,7 +100,7 @@ services:
       - words:
           - teal: Sofisticato
       - words:
-          - black: Richieste & Ri-Richieste
+          - black: Reclami & Ri-Reclami
     content: "Claim Management è un sistema robusto progettato per semplificare il processo di presentazione, tracciamento e risoluzione delle richieste di risarcimento assicurativo. Offre funzionalità come l'elaborazione automatica delle richieste, aggiornamenti di stato in tempo reale e report completi per garantire una gestione efficiente e trasparente delle richieste per assicuratori e assicurati. Utilizzando l'IA possiamo rispondere automaticamente ad alcune delle richieste delle compagnie assicurative."
     images:
       - "/images/claim-management_it.webp"
@@ -113,6 +112,7 @@ services:
   - title:
       - words:
           - teal: Completo
+      - words:
           - black: Analisi & Approfondimenti
     content: "Analytics & Insights è un insieme di strumenti specializzati mirati a migliorare l'efficienza e la precisione del processo di fatturazione medica. Offre funzionalità come report finanziari dettagliati, analisi delle tendenze e modellazione predittiva per aiutare i fornitori di assistenza sanitaria a ottimizzare i cicli di entrate, ridurre gli errori di fatturazione e migliorare i risultati dei pazienti attraverso decisioni basate sui dati."
     images:
