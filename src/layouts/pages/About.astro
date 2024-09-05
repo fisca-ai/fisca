@@ -49,10 +49,10 @@ const { title, story, task, founders, partner } = entry!.data;
               <img
                 src={founder.image}
                 alt={founder.name}
-                class="mx-auto mb-4 rounded-full w-32 h-32 object-cover"
+                class="mx-auto mb-4 rounded-full w-48 h-48 object-cover"
               />
-              <h3 class="text-xl font-semibold text-primary">{founder.name}</h3>
-              <div>
+              <h3 class="text-xl font-semibold text-primary" style="margin-bottom: 20px;">{founder.name}</h3>
+              <div style="text-align: left; margin: 20px;"> <!-- Added margins and adjusted text alignment -->
                 <div
                   class="prose prose-teal prose-a:text-primary max-w-none"
                   set:html={markdownify(founder.content)}
