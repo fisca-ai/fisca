@@ -18,6 +18,10 @@ founders:
     image: /images/diueine_headshot.jpg
     content: "Diueine Monteiro is a tech expert with a robust background in distributed systems, query understanding, and model quality. With experience at industry giants like Google, Microsoft, and Amazon, Diueine has led innovative projects in data ingestion, healthcare and machine learning. Currently the co-founder of Fisca AI, Diueine is dedicated to innovation in the healthcare space."
 
+     - name: Annina Graf
+    image: /images/diueine_headshot.jpg
+    content: "Annina Graf is a dynamic project associate actively engaged in Switzerland’s thriving startup ecosystem. With an MBA and extensive experience in project management, community building, and financial controlling she contributes her expertise to the Fisca team. Driven by her passion for innovation, Annina aims not only to make a meaningful impact but also to turn her entrepreneurial vision into reality."
+
 partner:
   title: Partner With Us
   opportunity: "We're always looking for opportunities to grow and collaborate with others who share our vision. If you're interested in partnering with us or learning more about what we can achieve together, please don't hesitate to reach out.
