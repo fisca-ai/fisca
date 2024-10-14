@@ -13,9 +13,9 @@ founders:
   - name: Co-fondateur 1
     image: /images/image-placeholder.webp
     content: "[Nom du Co-fondateur 1] apporte plus de [nombre] années d'expérience dans [domaine ou industrie]. Avant de fonder [Nom de Votre Startup], [il/elle] a travaillé chez [emploi ou réalisation notable précédente]. [Il/Elle] détient un [diplôme] en [domaine] de [université]. Pendant son temps libre, [il/elle] aime [loisir ou intérêt]."
-  - name: Co-fondateur 2
+  - name: Annina Graf
     image: /images/image-placeholder.webp
-    content: "[Nom du Co-fondateur 2] apporte plus de [nombre] années d'expérience dans [domaine ou industrie]. Avant de fonder [Nom de Votre Startup], [il/elle] a travaillé chez [emploi ou réalisation notable précédente]. [Il/Elle] détient un [diplôme] en [domaine] de [université]. Pendant son temps libre, [il/elle] aime [loisir ou intérêt]."
+    content: "Annina Graf est une collaboratrice de projet dynamique, activement engagée dans l'écosystème florissant des startups en Suisse. Avec un MBA et une vaste expérience en gestion de projet, développement de communauté et contrôle financier, elle apporte son expertise à l'équipe de Fisca. Animée par sa passion pour l'innovation, Annina vise non seulement à avoir un impact significatif, mais aussi à concrétiser sa vision entrepreneuriale."
 
 partner:
   title: Partenaires avec Nous
