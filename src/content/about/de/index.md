@@ -16,6 +16,9 @@ founders:
   - name: Mitgründer 2
     image: /images/image-placeholder.webp
     content: "[Mitgründer 2 Name] bringt über [Anzahl] Jahre Erfahrung in [Bereich oder Branche] mit. Bevor [Ihr Startup-Name] gegründet wurde, arbeitete [er/sie] bei [frühere bemerkenswerte Position oder Errungenschaft]. [Er/Sie] hat einen [Abschluss] in [Fachrichtung] von [Universität]. In seiner/ihrer Freizeit genießt [er/sie] [Hobby oder Interesse]."
+  - name: Annina Graf
+    image: /images/image-placeholder.webp
+    content: "Annina Graf arbeitet im Projekt Management und ist aktiv im Startup-Ökosystem der Schweiz tätig. Mit einem Master in Business Administration und umfangreicher Erfahrung in den Bereichen Projektmanagement, Community Building und Finanzcontrolling bereichert sie das Fisca-Team mit ihrem breiten Fachwissen. Mit Fisca will Annina nicht nur ihre unternehmerische Aspiration verfolgen, sondern auch ihre Leidenschaft für Innovation und Fortschritt zum Ausdruck bringen."
 
 partner:
   title: Arbeiten Sie mit uns zusammen
