@@ -14,7 +14,7 @@ founders:
     image: /images/image-placeholder.webp
     content: "Pankaj Kumar arbeitet als Softwareentwickler mit einer beeindruckenden Erfolgsbilanz bei Technologiegiganten wie Google, Amazon und Directi. Als Mitgründer von Fisca AI treibt er Innovationen im Bereich von skalierbaren Gesundheitslösungen voran. Mit fundierten Kenntnissen in C, C++ und Java sowie einem Abschluss von der Shanmugha Arts Science Technology and Research Academy setzt Pankaj seine Fähigkeiten in Spitzentechnologien ein und strebt durch kontinuierliches Lernen nach außergewöhnlichen Ergebnissen."
   - name: Diueine Monteiro
-    image: /images/image-placeholder.webp
+    image: /images/diueine_headshot.jpg
     content: "Diueine Monteiro ist ein Tech-Experte mit einem Hintergrund in Distributed Systems, Query-Verständnis und model quality. Bei seinen vorgängigen Arbeitgebern, unter anderem Google, Microsoft und Amazon, hat Diueine innovative Projekte in den Bereichen Datenaufnahme, health care und machine learning geleitet. Als Mitgründer von Fisca AI widmet er sich der Innovation im Gesundheitsbereich und kann seine Expertise optimal nutzen."
   - name: Annina Graf
     image: /images/image-placeholder.webp
