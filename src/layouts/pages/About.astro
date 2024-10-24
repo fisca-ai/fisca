@@ -2,60 +2,177 @@
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
+import { useTranslatedPath } from "@/i18n/utils";
 
-// Fetch the content entry
 const { lang } = Astro.props;
 const entry = await getEntryBySlug("about", lang!);
+const { title, page, story, task, founders, partner, stats, values, journey } =
+  entry!.data;
 
-// Destructure frontmatter
-const { title, story, task, founders, partner } = entry!.data;
+const tp = useTranslatedPath(lang!);
 ---
 
 <Base lang={lang} title={title}>
-  <section class="section bg-theme-light">
-    <div class="container mx-auto text-center">
-      <h1 class="mb-4 text-primary">
-        {title}
-      </h1>
-      <div>
-        <div
-          class="prose prose-teal prose-a:text-primary max-w-none"
-          set:html={markdownify(story.content)}
-        />
+  <!-- Hero Section - Keeping as is since it looks good -->
+  <section
+    class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900"
+  >
+    <div class="absolute inset-0 opacity-20">
+      <div
+        class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0.1)_100%)]"
+      >
+      </div>
+    </div>
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-center text-white space-y-8">
+        <h1
+          class="text-6xl md:text-7xl font-bold tracking-tighter bg-gradient-to-r from-white to-teal-200 bg-clip-text text-transparent"
+        >
+          {title}
+        </h1>
+        <p class="text-xl md:text-2xl font-light leading-relaxed text-teal-100">
+          {page.description}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+          <a
+            href={page.learn_button.link}
+            class="px-8 py-4 bg-teal-500 hover:bg-teal-400 text-white rounded-full transition-all transform hover:scale-105 shadow-lg"
+          >
+            {page.learn_button.label}
+          </a>
+          <a
+            href={tp(page.contact_button.link)}
+            class="px-8 py-4 bg-transparent border-2 border-teal-500 text-white rounded-full hover:bg-teal-500/20 transition-all transform hover:scale-105 shadow-lg"
+          >
+            {page.contact_button.label}
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container mx-auto text-center">
-      <h2 class="mb-4 text-primary">
-        {task.title}
-      </h2>
-      <div>
-        <div
-          class="prose prose-teal prose-a:text-primary max-w-none"
-          set:html={markdownify(task.content)}
-        />
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-theme-light">
-    <div class="container mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+  <!-- Stats Section - Updated with darker teal -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-2 gap-8">
         {
-          founders.map((founder: any) => (
-            <div class="text-center p-4 bg-white rounded-lg shadow-lg">
-              <img
-                src={founder.image}
-                alt={founder.name}
-                class="mx-auto mb-4 rounded-full w-48 h-48 object-cover"
-              />
-              <h3 class="text-xl font-semibold text-primary" style="margin-bottom: 20px;">{founder.name}</h3>
-              <div style="text-align: left; margin: 20px;"> <!-- Added margins and adjusted text alignment -->
-                <div
-                  class="prose prose-teal prose-a:text-primary max-w-none"
-                  set:html={markdownify(founder.content)}
+          stats.map((stat: any) => (
+            <div class="text-center p-6 bg-teal-900/5 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div class="text-4xl md:text-5xl font-bold text-teal-800 mb-2">
+                {stat.value}
+              </div>
+              <div class="text-teal-900">{stat.label}</div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section - Updated with darker teal gradient -->
+  <section
+    id="story"
+    class="py-24 bg-gradient-to-r from-teal-800 via-teal-700 to-teal-800"
+  >
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold text-white text-center mb-8">
+          {story.title}
+        </h2>
+        <div
+          class="prose prose-lg prose-teal max-w-none bg-white/90 rounded-xl p-8 shadow-lg"
+        >
+          <div set:html={markdownify(story.content)} />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section - Updated with darker teal -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-teal-800 mb-16">
+        {values.title}
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        {
+          values.entries.map((value: any) => (
+            <div class="bg-teal-900/5 p-8 rounded-xl hover:transform hover:scale-105 transition-all border border-teal-900/10">
+              <div class="text-teal-700 mb-4">
+                <span class="text-4xl">{value.icon}</span>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-teal-900">
+                {value.title}
+              </h3>
+              <p class="text-teal-800">{value.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section - Updated with darker teal gradient -->
+  <section
+    class="py-24 bg-gradient-to-r from-teal-800 via-teal-700 to-teal-800"
+  >
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-white mb-16">
+        {journey.title}
+      </h2>
+      <div class="max-w-3xl mx-auto">
+        {
+          journey.timeline.map((item: any, index: number) => (
+            <div class="flex gap-8 mb-12">
+              <div class="w-24 text-right">
+                <div class="text-teal-200 font-bold">{item.year}</div>
+              </div>
+              <div class="flex-1 relative">
+                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-teal-200 -translate-x-[22px] translate-y-1" />
+                <div class="pl-8 border-l-2 border-teal-600">
+                  <h3 class="text-xl font-bold mb-2 text-white">
+                    {item.title}
+                  </h3>
+                  <p class="text-teal-200">{item.description}</p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Founders Section - Updated with darker teal -->
+  <section class="py-24 bg-teal-900/5">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-teal-900 mb-16">
+        {founders.title}
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        {
+          founders.entries.map((founder: any) => (
+            <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden">
+              <div class="aspect-[4/5] relative">
+                <img
+                  src={founder.image}
+                  alt={founder.name}
+                  class="w-full h-full object-cover"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-teal-950 to-transparent opacity-0 group-hover:opacity-100 transition-all">
+                  <div class="absolute bottom-0 p-6 text-white">
+                    <div class="prose prose-invert max-w-none">
+                      <div set:html={markdownify(founder.content)} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 bg-white">
+                <h3 class="text-2xl font-bold text-teal-900">{founder.name}</h3>
+                <p class="text-teal-700">{founder.title}</p>
+                <p
+                  class="text-teal-800 mt-2"
+                  set:html={markdownify(founder.subtitle)}
                 />
               </div>
             </div>
@@ -65,16 +182,25 @@ const { title, story, task, founders, partner } = entry!.data;
     </div>
   </section>
 
-  <section class="section">
-    <div class="container mx-auto text-center">
-      <h2 class="mb-4 text-primary">
-        {partner.title}
-      </h2>
-      <div>
-        <div
-          class="prose prose-teal prose-a:text-primary max-w-none"
+  <!-- Partner Section - Keeping as is since it matches the dark theme -->
+  <section class="py-24 bg-teal-900/5">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2
+          class="text-4xl md:text-5xl font-bold tracking-tighter bg-gradient-to-r text-teal-900"
+        >
+          {partner.title}
+        </h2>
+        <p
+          class="text-l md:text-xl font-light leading-relaxed mt-8 mb-12 bg-gradient-to-r bg-clip-text text-teal-800"
           set:html={markdownify(partner.opportunity)}
         />
+        <a
+          href={tp(partner.cta.link)}
+          class="inline-block mt-12 px-8 py-4 bg-white text-teal-600 rounded-lg hover:bg-teal-50 transition-all shadow-lg"
+        >
+          {partner.cta.text}
+        </a>
       </div>
     </div>
   </section>

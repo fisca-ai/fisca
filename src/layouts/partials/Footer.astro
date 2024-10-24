@@ -9,24 +9,40 @@ import { useTranslations, useTranslatedPath } from "@/i18n/utils";
 
 const { lang } = Astro.props;
 
-const { footer_content, copyright } = config.params;
+const { footer_content, copyright, contact_form_action } = config.params;
 const t = useTranslations(lang!);
 const tp = useTranslatedPath(lang!);
 ---
 
-<footer class="section bg-theme-light pb-0">
-  <div class="container">
-    {/* footer menu */}
-    <div class="row">
+<footer
+  class="bg-gradient-to-br from-teal-900 via-teal-800 to-teal-900 pt-16 pb-0 relative overflow-hidden"
+>
+  <div class="absolute inset-0 opacity-20">
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_0%,rgba(0,0,0,0.1)_100%)]"
+    >
+    </div>
+  </div>
+
+  <div class="container relative">
+    <!-- footer menu and content -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-8 gap-12">
       {
         menu.footer.map((col) => {
           return (
-            <div class="mb-12 sm:col-6 lg:col-3">
-              <h2 class="h4" set:html={t(col.name)} />
-              <ul class="mt-6">
+            <div class="lg:col-span-2 mb-12">
+              <h2
+                class="text-xl font-bold text-white mb-6"
+                set:html={t(col.name)}
+              />
+              <ul class="space-y-3">
                 {col?.menu.map((item) => (
-                  <li class="mb-1">
-                    <a href={tp(item.url)} rel="">
+                  <li>
+                    <a
+                      href={tp(item.url)}
+                      class="text-teal-100 hover:text-white transition-colors inline-block"
+                      rel=""
+                    >
                       {t(item.text)}
                     </a>
                   </li>
@@ -36,24 +52,80 @@ const tp = useTranslatedPath(lang!);
           );
         })
       }
-      {/* social icons */}
-      <div class="md-12 sm:col-6 lg:col-3">
-        <a href={tp("/")} aria-label="Fisca">
+
+      {/* contact form section */}
+      <div class="lg:col-span-2 mb-12">
+        <h2 class="text-xl font-bold text-white mb-6">{t("Contact Us")}</h2>
+        <form
+          class="space-y-4"
+          method="POST"
+          action={contact_form_action}
+          data-netlify="true"
+        >
+          <div>
+            <input
+              class="px-2 py-1 bg-white/10 border border-teal-700/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 text-white placeholder-teal-200"
+              name="name"
+              type="text"
+              placeholder={t("Name")}
+              required
+            />
+          </div>
+          <div>
+            <input
+              class="px-2 py-1 bg-white/10 border border-teal-700/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 text-white placeholder-teal-200"
+              name="email"
+              type="email"
+              placeholder={t("Your email")}
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="px-6 py-0 bg-teal-500 hover:bg-teal-400 text-white rounded-lg transition-all transform hover:scale-105 shadow-lg font-medium"
+          >
+            {t("Send")}
+          </button>
+        </form>
+      </div>
+
+      {/* logo and social section */}
+      <div class="lg:col-span-2 mb-12">
+        <a
+          href={tp("/")}
+          aria-label="Fisca"
+          class="inline-block mb-6 transform hover:scale-105 transition-transform"
+        >
           <Image
             src={config.site.logo_green}
             width={Number(config.site.logo_width)}
             height={Number(config.site.logo_height)}
             alt=""
+            class="brightness-0 invert"
           />
         </a>
 
-        <p class="mt-3 mb-6" set:html={markdownify(footer_content)} />
-        <Social source={social} className="social-icons mb-8" />
+        <p class="text-teal-100 mb-6" set:html={markdownify(footer_content)} />
+
+        <Social
+          source={social}
+          className="social-icons mb-8 gap-4 flex items-center [&>a]:text-teal-100 [&>a:hover]:text-white [&>a]:transition-colors"
+        />
       </div>
     </div>
+
     {/* copyright */}
-    <div class="border-t border-border py-6">
-      <p class="text-sm text-center" set:html={markdownify(t(copyright))} />
+    <div class="border-t border-teal-700/30 py-6">
+      <p
+        class="text-sm text-center text-teal-100"
+        set:html={markdownify(t(copyright))}
+      />
     </div>
   </div>
 </footer>
+
+<style>
+  .social-icons a {
+    @apply inline-block;
+  }
+</style>

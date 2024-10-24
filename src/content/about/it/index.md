@@ -1,28 +1,47 @@
 ---
+
 title: "Chi Siamo"
 
+page:
+description: "Rivoluzionare la fatturazione sanitaria con soluzioni innovative basate sull'IA"
+learn_button:
+label: "Scopri La Nostra Storia"
+link: "#story"
+contact_button:
+label: "Contattaci"
+link: "/contact"
+
+# Add these to your existing frontmatter
+
+stats:
+
+- value: "98%"
+  label: "Precisione di Fatturazione"
+
+# - value: "500+"
+
+# label: "Partner Sanitari"
+
+# - value: "$50M+"
+
+# label: "Entrate Elaborate"
+
+- value: "24/7"
+  label: "Supporto Continuo"
+
+values:
+title: "I Nostri Valori Fondamentali"
+entries: - icon: "⚡" # You can use custom SVG icons here
+title: "Innovazione"
+description: "Guidare il futuro della fatturazione sanitaria attraverso tecnologie IA all'avanguardia." - icon: "🎯"
+title: "Precisione"
+description: "Garantire risultati precisi e affidabili grazie ad avanzati algoritmi di apprendimento automatico." - icon: "🤝"
+title: "Collaborazione"
+description: "Coltivare rapporti duraturi con i fornitori di servizi sanitari per migliorare la gestione del ciclo dei ricavi."
+
 story:
-  title: La Nostra Storia
-  content: Benvenuti in Fisca AI, dove facilitiamo la generazione e l'interpretazione della fatturazione medica utilizzando l'IA. Fondata nel 2024, il nostro viaggio è iniziato quando...
+title: "La Nostra Storia"
+content: |
+Benvenuti in Fisca AI, dove l'intelligenza artificiale innovativa incontra il complesso mondo della fatturazione medica. Fondata nel 2024, la nostra missione è semplificare e rivoluzionare i processi di fatturazione, rendendo i servizi sanitari più efficienti per fornitori e pazienti.</br>
 
-task:
-  title: Cosa Facciamo
-  content: In Fisca AI, ci specializziamo nell'applicazione dell'IA per risolvere i problemi di fatturazione medica, risparmiando tempo e permettendo ai medici di concentrarsi sui pazienti invece che sulla fatturazione. Il nostro obiettivo è migliorare la precisione e lo sforzo nella creazione, validazione o comprensione delle fatture mediche. Siamo impegnati a...
-
-founders:
-  - name: Co-fondatore 1
-    image: /images/image-placeholder.webp
-    content: "[Nome del Co-fondatore 1] porta oltre [numero] anni di esperienza in [settore o industria]. Prima di fondare [Nome della Tua Startup], [lui/lei] ha lavorato presso [precedente lavoro o risultato notevole]. [Lui/Lei] possiede una [laurea] in [campo] presso [università]. Nel tempo libero, [lui/lei] ama [hobby o interesse]."
-  - name: Annina Graf
-    image: /images/image-placeholder.webp
-    content: "Annina Graf è una dinamica collaboratrice di progetto, attivamente coinvolta nell'ecosistema delle startup in crescita in Svizzera. Con un MBA e una vasta esperienza nella gestione di progetti, nello sviluppo di comunità e nel controllo finanziario, apporta la sua competenza al team di Fisca. Spinta dalla sua passione per l'innovazione, Annina mira non solo a creare un impatto significativo, ma anche a realizzare la sua visione imprenditoriale."
-    
-partner:
-  title: Collabora con Noi
-  opportunity: "Siamo sempre alla ricerca di opportunità per crescere e collaborare con altri che condividono la nostra visione. Se sei interessato a collaborare con noi o a scoprire di più su cosa possiamo realizzare insieme, non esitare a contattarci.
-  
-  Contattaci a [partner@fisca.ai](mailto:partner@fisca.ai) o visita la nostra [Pagina di Contatto](http://fisca.ai/contact).
-  
-  Grazie per il tuo interesse in [Nome della Tua Startup]. Non vediamo l'ora di esplorare nuove opportunità insieme!"
-
----
+    Il nostro percorso è iniziato in Google, dove ci siamo uniti attraverso la nostra passione condivisa per l'uso della
