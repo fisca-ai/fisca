@@ -46,9 +46,9 @@ story:
 journey:
   title: "Our Journey"
   timeline:
-    - year: "May, 2024"
-      title: "Foundation"
-      description: "Fisca AI was founded with a vision to transform medical billing."
+    # - year: "May, 2024"
+    #   title: "Foundation"
+    #   description: "Fisca AI was founded with a vision to transform medical billing."
     - year: "Oct, 2024"
       title: "Prototype Launch"
       description: "Launched advanced machine learning models for predictive billing analysis."

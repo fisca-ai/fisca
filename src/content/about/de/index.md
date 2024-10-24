@@ -46,9 +46,9 @@ story:
 journey:
   title: "Unsere Reise"
   timeline:
-    - year: "Mai 2024"
-      title: "Gründung"
-      description: "Fisca AI wurde mit der Vision gegründet, die medizinische Abrechnung zu transformieren."
+    # - year: "Mai 2024"
+    #   title: "Gründung"
+    #   description: "Fisca AI wurde mit der Vision gegründet, die medizinische Abrechnung zu transformieren."
     - year: "Okt 2024"
       title: "Prototypenstart"
       description: "Einführung fortschrittlicher Modelle des maschinellen Lernens für prädiktive Abrechnungsanalysen."

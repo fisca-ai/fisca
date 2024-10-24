@@ -46,9 +46,9 @@ story:
 journey:
   title: "Notre Voyage"
   timeline:
-    - year: "Mai 2024"
-      title: "Fondation"
-      description: "Fisca AI a été fondée avec la vision de transformer la facturation médicale."
+    # - year: "Mai 2024"
+    #   title: "Fondation"
+    #   description: "Fisca AI a été fondée avec la vision de transformer la facturation médicale."
     - year: "Octobre 2024"
       title: "Lancement du Prototype"
       description: "Introduction de modèles avancés d'apprentissage automatique pour l'analyse prédictive de la facturation."
