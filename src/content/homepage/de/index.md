@@ -2,12 +2,12 @@
 banner:
   title:
     - words:
-        - teal: Intelligente
-        - black: Abrechnung
+        - teal: Dein KI-basierter
+        - black: Co-Pilot
       end: "."
     - words:
-        - teal: Pflege
-        - black: Stärken
+        - teal: für die
+        - black: medizinische Kodierung
       end: "."
 
   content: "Ermöglicht Gesundheitsdienstleistern KI-gestützte Diagnosekodierung und Abrechnung für die Zukunft des Einnahmen- und Forderungsmanagements."
