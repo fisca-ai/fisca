@@ -154,7 +154,7 @@ const tp = useTranslatedPath(lang!);
     var height =
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
+    var scrolled = (winScroll / height) * 99.9;
     var progress_bar = document.getElementById("header_progress_bar");
     if (progress_bar) {
       progress_bar.style.width = scrolled + "%";
