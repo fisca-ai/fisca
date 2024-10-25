@@ -2,12 +2,12 @@
 banner:
   title:
     - words:
-        - teal: Intelligente
-        - black: Abrechnung
+        - teal: Dein KI basierter
+        - black: Co-Pilot
       end: "."
     - words:
-        - teal: Pflege
-        - black: Stärken
+        - teal: für die medizinische
+        - black: Kodierung
       end: "."
 
   content: "Ermöglicht Gesundheitsdienstleistern KI-gestützte Diagnosekodierung und Abrechnung für die Zukunft des Einnahmen- und Forderungsmanagements."
@@ -129,27 +129,27 @@ feature:
     - title:
         - words:
             - teal: "KI-Medizinische Kodierung"
-      content: "Wir verwenden KI, um automatisch genaue medizinische Kodierungen aus den Notizen der Ärzte zu identifizieren."
+      content: "Durch die Nutzung von KI können wir automatisch medizinische Kodierungen aus ärztlichen Berichten identifizieren."
     - title:
         - words:
             - teal: "Konform"
-      content: "Wir sind konform mit der Schweizer medizinischen Kodierung und Versicherung, weniger Zeit für Versicherungsschäden."
+      content: "Wir sind konform mit den schweizerischen Richtlinien der medizinischen Kodierung."
     - title:
         - words:
             - teal: "Kundendienst"
       content: "Wir sind 24*7 verfügbar."
     - title:
         - words:
-            - teal: "Preis-Leistungs-Verhältnis"
-      content: "Wir identifizieren verpasste Einnahmemöglichkeiten, die bereits für die Dienstleistungen bezahlen."
+            - teal: "Analyse Tool"
+      content: "Wir generieren automatisch Reportings von verpassten Einnahmemöglichkeiten und oft beanstandeten Codes. So können Sie ihre Kodierung weiter verbessern."
     - title:
         - words:
             - teal: "Private Schweizer Cloud"
-      content: "Datenschutz durch Design. Wir verstehen Datenschutz. Ihre Daten verlassen die Schweiz nie."
+      content: "Wir verstehen Datenschutz. Ihre Daten verlassen die Schweiz nie durch unsere private Schweizer Cloud."
     - title:
         - words:
             - teal: "Rechnungsverständnis"
-      content: "Scannen oder laden Sie Ihre Rechnung hoch, um zu verstehen, was jedes Element bedeutet."
+      content: "Chatten sie mit unserem KI Interface, um zu verstehen, was jedes Element ihrer Rechnung bedeutet."
 
 # app
 app:

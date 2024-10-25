@@ -22,22 +22,22 @@ stats:
     label: "Engagierte Unterstützung"
 
 values:
-  title: "Unsere Grundwerte"
+  title: "Unsere Werte"
   entries:
     - icon: "⚡" # You can use custom SVG icons here
       title: "Innovation"
-      description: "Die Zukunft der Gesundheitsabrechnung mit modernster KI-Technologie vorantreiben."
+      description: "Die Zukunft des Abrechnungssystems im Gesundheitswesen mit modernster KI-Technologie vorantreiben."
     - icon: "🎯"
       title: "Präzision"
-      description: "Sichere genaue und zuverlässige Ergebnisse, unterstützt von fortschrittlichen Algorithmen des maschinellen Lernens."
+      description: "Sichere, genaue und zuverlässige Ergebnisse. Unterstützt durch fortschrittliche Algorithmen durch maschinelles Lernen."
     - icon: "🤝"
       title: "Partnerschaft"
-      description: "Langfristige Beziehungen zu Gesundheitsanbietern pflegen, um das Management des Einnahmenzyklus zu verbessern."
+      description: "Langfristige Beziehungen zu Institutionen und Partnern im Gesundheitswesen schaffen, um die Geschwindigkeit der Leistungsabrechnung zu verbessern."
 
 story:
   title: "Unsere Geschichte"
   content: |
-    Willkommen bei Fisca AI, wo innovative künstliche Intelligenz auf die komplexe Welt der medizinischen Abrechnung trifft. Gegründet im Jahr 2024, ist es unsere Mission, die Abrechnungsprozesse zu optimieren und zu revolutionieren, um die Gesundheitsdienste für Anbieter und Patienten effizienter zu gestalten.</br>
+    Willkommen bei Fisca AI, wo innovative künstliche Intelligenz auf die komplexe Welt der medizinischen Abrechnung trifft. Es ist unsere Mission, die Abrechnungsprozesse im Gesundheitswesen zu optimieren und zu revolutionieren, um die Gesundheitsdienste für Anbieter und Patienten effizienter zu gestalten.</br>
 
     Unsere Reise begann bei Google, wo wir durch unsere gemeinsame Leidenschaft für die Nutzung von Technologie zur Schaffung bedeutender Veränderungen verbunden wurden. Wir erkannten das immense Potenzial von KI, um die Gesundheitsbranche zu transformieren, und kombinierten unser Fachwissen, um Fisca AI zu gründen—ein Unternehmen, das sich der Innovation und Exzellenz in der medizinischen Abrechnung verschrieben hat.</br>
 
@@ -47,8 +47,8 @@ journey:
   title: "Unsere Reise"
   timeline:
     # - year: "Mai 2024"
-    #   title: "Gründung"
-    #   description: "Fisca AI wurde mit der Vision gegründet, die medizinische Abrechnung zu transformieren."
+    #   title: "Start"
+    #   description: "Fisca AI wurde mit der Vision gestartet, die medizinische Abrechnung zu transformieren."
     - year: "Okt 2024"
       title: "Prototypenstart"
       description: "Einführung fortschrittlicher Modelle des maschinellen Lernens für prädiktive Abrechnungsanalysen."
@@ -70,9 +70,9 @@ founders:
 
     - name: Annina Graf
       title: Mitgründerin und COO
-      subtitle: MBA, Universität Bern
+      subtitle: MBA, Universität Bern, Projekt Manager
       image: /images/annina_headshot.jpg
-      content: "Annina Graf ist eine leidenschaftliche Projektassistentin, die aktiv zur dynamischen Startup-Ökosystem in der Schweiz beiträgt. Mit einem MBA und umfangreicher Erfahrung in Projektmanagement, Gemeinschaftsengagement und finanzieller Aufsicht bringt sie wertvolle Expertise in das Fisca-Team ein. Getrieben von ihrer Leidenschaft für Innovation möchte Annina nicht nur einen bedeutenden Einfluss ausüben, sondern auch ihre unternehmerische Vision verwirklichen."
+      content: "Annina Graf ist eine Projekt Managerin, die aktiv zum dynamischen Startup-Ökosystem in der Schweiz beiträgt. Mit einem MBA von der Universität Groningen und umfangreicher Erfahrung im Projektmanagement, Community Engagement und Financial Controlling bringt sie wertvolle Expertise in das Fisca-Team ein. Getrieben von ihrer Leidenschaft für Innovation möchte Annina nicht nur einen bedeutenden Einfluss ausüben, sondern auch ihre unternehmerische Vision verwirklichen."
 
 partner:
   title: "Partnerschaft Mit Uns"
